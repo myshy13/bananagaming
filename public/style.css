@@ -19,8 +19,8 @@ body {
 
 .game {
   background-color: #00000024;
-  height: 14rem;
-  width: 10rem;
+  height: 10.5rem;
+  width: 10.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,6 +34,22 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.125);
   transition: 0.3s ease;
   position: relative;
+}
+
+.game h4 {
+  position: absolute;
+  opacity: 0;
+  transition: 0.2s ease;
+  background-color: #222;
+  padding: 0.5rem;
+  border-radius: 100rem;
+  bottom: -0.7rem;
+  width: 8.56em;
+  box-sizing: border-box;
+}
+
+.game:hover h4 {
+  opacity: 1;
 }
 
 .searchIcon {
