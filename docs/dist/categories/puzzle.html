@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Banana Gaming | arcade games</title>
+    <link
+      rel="stylesheet"
+      crossorigin
+      href="/style.css"
+    />
+    <meta
+      name="description"
+      content="Play free online games at Banana Gaming! Enjoy a variety of fun and exciting games directly in your browser. No downloads required!"
+    />
+  </head>
+  <body>
+    <div class="background"></div>
+    <div
+      class="games"
+      id="games"
+    ></div>
+    <nav class="sidebar">
+      <ul class="games">
+        <li>
+          <a href="/categories/arcade.html">
+            <img
+              src="/assets/arcade.svg"
+              alt="arcade"
+              class="categoryIcon"
+            />Arcade</a
+          >
+        </li>
+        <li>
+          <a href="/categories/puzzle.html">
+            <img
+              src="/assets/puzzle.svg"
+              alt="puzzle"
+              class="categoryIcon"
+            />Puzzle</a
+          >
+        </li>
+        <li>
+          <a href="/categories/skill.html">
+            <img
+              src="/assets/skill.svg"
+              alt="skill"
+              class="categoryIcon"
+            />Skill</a
+          >
+        </li>
+        <li>
+          <a href="/categories/driving.html">
+            <img
+              src="/assets/driving.svg"
+              alt="driving"
+              class="categoryIcon"
+            />Driving</a
+          >
+        </li>
+        <li>
+          <a href="/categories/idle.html">
+            <img
+              src="/assets/idle.svg"
+              alt="idle"
+              class="categoryIcon"
+            />Idle</a
+          >
+        </li>
+        <li>
+          <a href="/categories/casual.html">
+            <img
+              src="/assets/casual.svg"
+              alt="casual"
+              class="categoryIcon"
+            />Casual</a
+          >
+        </li>
+        <li>
+          <a href="/categories/platformer.html">
+            <img
+              src="/assets/platformer.svg"
+              alt="platformer"
+              class="categoryIcon"
+            />Platformer</a
+          >
+        </li>
+        <li>
+          <a href="/categories/shooter.html">
+            <img
+              src="/assets/shooter.svg"
+              alt="shooter"
+              class="categoryIcon"
+            />Shooter</a
+          >
+        </li>
+        <li>
+          <a href="/categories/sandbox.html">
+            <img
+              src="/assets/sandbox.svg"
+              alt="sandbox"
+              class="categoryIcon"
+            />Sandbox</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <script>
+      var games = [
+        {
+          name: "granny",
+          path: "/games/Granny/index.html",
+          logoSrc: "/games/Granny/logo.webp",
+        },
+        {
+          name: "minecraft",
+          path: "/games/minecraft/index.html",
+          logoSrc: "/games/minecraft/logo.webp",
+        },
+        {
+          name: "DOOM",
+          path: "/games/webdoom/index.html",
+          logoSrc: "/games/webdoom/logo.png",
+        },
+        {
+          name: "world's hardest game",
+          path: "/games/hardestgame/index.html",
+          logoSrc: "/games/hardestgame/logo.jpg",
+        },
+        {
+          name: "the impossible quiz",
+          path: "/games/impossiblequiz/index.html",
+          logoSrc: "/games/impossiblequiz/logo.png",
+        },
+        {
+          name: "bloons td 5",
+          path: "/games/td5/index.html",
+          logoSrc: "/games/td5/logo.png",
+        },
+        {
+          name: "opposite day",
+          path: "/games/oppositeday/index.html",
+          logoSrc: "/games/oppositeday/logo.webp",
+        },
+        {
+          name: "pacman",
+          path: "/games/pacman/index.html",
+          logoSrc: "/games/pacman/logo.png",
+        },
+        {
+          name: "tetris",
+          path: "/games/tetris/index.html",
+          logoSrc: "/games/tetris/logo.webp",
+        },
+      ];
+
+      games.forEach((element) => {
+        const gamesDiv = document.getElementById("games");
+        const gameButton = document.createElement("a");
+        const gameLogo = document.createElement("img");
+        const gameLabel = document.createElement("h4");
+
+        // Set the alt attribute for the logo
+        gameLogo.alt = `game logo: ${element.name}`;
+
+        gameLogo.src = element.logoSrc;
+        gameButton.className = "game";
+        gameButton.href = element.path;
+        gameButton.style.textDecoration = "none";
+        gameButton.style.color = "white";
+        gameLogo.style.borderRadius = "12px";
+        gameLabel.textContent = element.name;
+        gameButton.appendChild(gameLogo);
+        gameButton.appendChild(gameLabel);
+        gamesDiv.appendChild(gameButton);
+      });
+    </script>
+  </body>
+</html>
