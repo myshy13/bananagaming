@@ -1,6 +1,0 @@
-\node_modules\
-\Unused\
-\SourceFiles\
-\build.bat
-\steam.js
-\modloader.js
