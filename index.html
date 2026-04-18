@@ -1,436 +1,487 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <script
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8779049323573357"
-      crossorigin="anonymous"
-    ></script>
-    <meta charset="UTF-8" />
-    <script
-      async
-      src="https://fundingchoicesmessages.google.com/i/pub-8779049323573357?ers=1"
-    ></script>
-    <script src="./analytics.js"></script>
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="/vite.svg"
-    />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-YR0R8TVKF5"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
+
+<head>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8779049323573357"
+    crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <script async src="https://fundingchoicesmessages.google.com/i/pub-8779049323573357?ers=1"></script>
+  <script src="./analytics.js"></script>
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YR0R8TVKF5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-YR0R8TVKF5");
+  </script>
+  <!-- SSO -->
+  <meta name="description"
+    content="Play free online games at hamacgaming! Enjoy a variety of fun and exciting games directly in your browser. No downloads required!" />
+  <meta name="keywords"
+    content="gaming, hamacgaming, fun, free games, online games, browser games, online, browser, unblocked, school, unblocked games, unblocked school, unblocked games 66, unblocked games 77, unblocked games 24h, unblocked games 76, unblocked games 999, unblocked games 500, unblocked games 300, unblocked games 123, unblocked games 1v1lol, unblocked games 90s, unblocked games 2020, unblocked games 2021, unblocked games 2022, unblocked games 2023, unblocked games 2026, unblocked games 2024, unblocked games 2025" />
+  <meta name="" />
+  <title>hamacgaming</title>
+  <link rel="stylesheet" crossorigin href="/style.css" />
+  <meta name="description"
+    content="Play free online games at hamacgaming! Enjoy a variety of fun and exciting games directly in your browser. No downloads required!" />
+</head>
+
+<body>
+  <div class="background"></div>
+  <div class="games" id="games"></div>
+  <label class="search" for="search">
+    <img class="searchIcon" src="/assets/search.svg" />
+    <input type="text" placeholder="Search" class="input" id="search" />
+  </label>
+  <script>
+    var search = document.getElementById("search");
+
+    let badgeData = {};
+
+    let serverurl = "https://floral-tree-6a4f.hamac.workers.dev";
+
+    var games = [
+      {
+        name: "1v1.lol",
+        path: "./games/1v1.lol/index.html",
+        logoSrc: "./games/1v1.lol/logo.webp",
+        keywords: [],
+        id: "1v1.lol",
+      },
+      {
+        name: "2048",
+        path: "./games/2048/index.html",
+        logoSrc: "./games/2048/logo.png",
+        keywords: [],
+        id: "2048",
+      },
+      {
+        name: "A game about climbing",
+        path: "./games/gameaboutclimbing/index.html",
+        logoSrc: "./games/gameaboutclimbing/logo.png",
+        keywords: [],
+        fontsize: 0.8,
+        id: "gameaboutclimbing",
+      },
+      {
+        name: "A small world cup",
+        path: "./games/asmallworldcup/index.html",
+        logoSrc: "./games/asmallworldcup/logo.webp",
+        keywords: [],
+        id: "asmallworldcup",
+      },
+      {
+        name: "Bitlife sim",
+        path: "./games/bitlife/index.html",
+        logoSrc: "./games/bitlife/logo.png",
+        keywords: [],
+        id: "bitlife",
+      },
+      {
+        name: "Bloons td 5",
+        path: "./games/td5/index.html",
+        logoSrc: "./games/td5/logo.png",
+        keywords: [],
+        id: "td5",
+      },
+      {
+        name: "Cookie clicker",
+        path: "./games/cookieclicker/index.html",
+        logoSrc: "./games/cookieclicker/logo.png",
+        keywords: [],
+        id: "cookieclicker",
+      },
+      {
+        name: "Crossy road",
+        path: "./games/crossy/index.html",
+        logoSrc: "./games/crossy/logo.webp",
+        keywords: [],
+        id: "crossy",
+      },
+      {
+        name: "DOOM",
+        path: "./games/webdoom/index.html",
+        logoSrc: "./games/webdoom/logo.webp",
+        keywords: [],
+        id: "webdoom",
+      },
+      {
+        name: "Elastic man",
+        path: "./games/elasticman/index.html",
+        logoSrc: "./games/elasticman/logo.webp",
+        keywords: [],
+        id: "elasticman",
+      },
+      {
+        name: "Granny",
+        path: "./games/Granny/index.html",
+        logoSrc: "./games/Granny/logo.webp",
+        keywords: [],
+        id: "Granny",
+      },
+      {
+        name: "Hollow knight",
+        path: "./games/hollow-knight/index.html",
+        logoSrc: "./games/hollow-knight/logo.jpg",
+        keywords: [],
+        id: "hollow-knight",
+      },
+      {
+        name: "Jelly truck",
+        path: "./games/jellytruck/index.html",
+        logoSrc: "./games/jellytruck/logo.jpg",
+        keywords: [],
+        id: "jellytruck",
+      },
+      {
+        name: "Mario kart",
+        path: "./games/mariokart/index.html",
+        logoSrc: "./games/mariokart/logo.jpeg",
+        keywords: [],
+        id: "mariokart",
+      },
+      {
+        name: "Minecraft",
+        path: "./games/minecraft/index.html",
+        logoSrc: "./games/minecraft/logo.webp",
+        keywords: [],
+        id: "minecraft",
+      },
+      {
+        name: "Mini golf",
+        path: "./games/miniputt/index.html",
+        logoSrc: "./games/miniputt/logo.jpg",
+        keywords: [],
+        id: "minigolf",
+      },
+      {
+        name: "Moto x3m",
+        path: "./games/moto/x3m/index.html",
+        logoSrc: "./games/moto/x3m/logo.png",
+        keywords: [],
+        id: "motox3m",
+      },
+      {
+        name: "Mrmine",
+        path: "./games/mrmine/index.html",
+        logoSrc: "./games/mrmine/logo.webp",
+        keywords: [],
+        id: "mrmine",
+      },
+      {
+        name: "Opposite day",
+        path: "./games/oppositeday/index.html",
+        logoSrc: "./games/oppositeday/logo.webp",
+        keywords: [],
+        id: "oppositeday",
+      },
+      {
+        name: "OvO",
+        path: "./games/ovo/index.html",
+        logoSrc: "./games/ovo/logo.webp",
+        keywords: [],
+        id: "ovo",
+      },
+      {
+        name: "Pacman",
+        path: "./games/pacman/index.html",
+        logoSrc: "./games/pacman/logo.png",
+        keywords: [],
+        id: "pacman",
+      },
+      {
+        name: "Papas freezeria",
+        path: "./games/papasfreezieria/index.html",
+        logoSrc: "./games/papasfreezieria/logo.webp",
+        keywords: [],
+        id: "papasfreezieria",
+      },
+      {
+        name: "Papas hotdogs",
+        path: "./games/papashotdogs/index.html",
+        logoSrc: "./games/papashotdogs/logo.jpg",
+        keywords: [],
+        id: "papashotdogs",
+      },
+      {
+        name: "Papas pizzeria",
+        path: "./games/papaspizzeria/index.html",
+        logoSrc: "./games/papaspizzeria/logo.webp",
+        keywords: [],
+        id: "papaspizzeria",
+      },
+      {
+        name: "Paper io",
+        path: "./games/paperio/index.html",
+        logoSrc: "./games/paperio/logo.webp",
+        keywords: [],
+        id: "paperio",
+      },
+      {
+        name: "Plants vs Zombies",
+        path: "./games/pvz/index.html",
+        logoSrc: "./games/pvz/logo.webp",
+        keywords: [],
+        id: "pvz",
+      },
+      {
+        name: "Ragdoll archers",
+        path: "./games/ragarchers/index.html",
+        logoSrc: "./games/ragarchers/logo.webp",
+        keywords: [],
+        id: "ragarchers",
+      },
+      {
+        name: "Ragdoll hit",
+        path: "./games/ragdoll/index.html",
+        logoSrc: "./games/ragdoll/logo.webp",
+        keywords: [],
+        id: "ragdoll",
+      },
+      {
+        name: "Run 3",
+        path: "./games/run3/index.html",
+        logoSrc: "./games/run3/logo.png",
+        keywords: [],
+        id: "run3",
+      },
+      {
+        name: "Slope",
+        path: "./games/slope/index.html",
+        logoSrc: "./games/slope/logo.jpg",
+        keywords: [],
+        id: "slope",
+      },
+      {
+        name: "Slope3",
+        path: "./games/slope3/index.html",
+        logoSrc: "./games/slope3/logo.webp",
+        keywords: [],
+        id: "slope3",
+      },
+      {
+        name: "Snow rider 3d",
+        path: "./games/Snow-Rider3D/index.html",
+        logoSrc: "./games/Snow-Rider3D/logo.png",
+        keywords: [],
+        id: "Snow-Rider3D",
+      },
+      {
+        name: "Space waves",
+        path: "./games/spacewaves/index.html",
+        logoSrc: "./games/spacewaves/logo.png",
+        keywords: [],
+        id: "spacewaves",
+      },
+      {
+        name: "Stickman hook",
+        path: "./games/stickmanhook/index.html",
+        logoSrc: "./games/stickmanhook/logo.webp",
+        keywords: [],
+        id: "stickmanhook",
+      },
+      {
+        name: "Subway surfers",
+        path: "./games/subway/index.html",
+        logoSrc: "./games/subway/logo.webp",
+        keywords: [],
+        id: "subwaysurfers",
+      },
+      {
+        name: "Terraria",
+        path: "./games/terraria/index.html",
+        logoSrc: "./games/terraria/logo.webp",
+        keywords: [],
+        id: "terraria",
+      },
+      {
+        name: "Tetris",
+        path: "./games/tetris/index.html",
+        logoSrc: "./games/tetris/logo.webp",
+        keywords: [],
+        id: "tetris",
+      },
+      {
+        name: "The impossible quiz",
+        path: "./games/impossiblequiz/index.html",
+        logoSrc: "./games/impossiblequiz/logo.png",
+        keywords: [],
+        id: "impossiblequiz",
+      },
+      {
+        name: "Drive mad",
+        path: "./games/drivemad/index.html",
+        logoSrc: "./games/drivemad/logo.png",
+        keywords: [],
+        id: "drivemad",
+      },
+      {
+        name: "Angry birds",
+        path: "./games/angry/index.html",
+        logoSrc: "./games/angry/logo.webp",
+        keywords: [],
+        id: "angry",
+      },
+      {
+        name: "They are coming",
+        path: "./games/zombiedefense/index.html",
+        logoSrc: "./games/zombiedefense/logo.png",
+        keywords: [],
+        id: "zombiedefense",
+      },
+      {
+        name: "Tiny fishing",
+        path: "./games/tinyFishing/index.html",
+        logoSrc: "./games/tinyFishing/logo.jpg",
+        keywords: [],
+        id: "tinyFishing",
+      },
+      {
+        name: "Ultrakill",
+        path: "./games/ultrakill/index.html",
+        logoSrc: "./games/ultrakill/logo.png",
+        keywords: [],
+        id: "ultrakill",
+      },
+      {
+        name: "Untitled goose game",
+        path: "./games/goosegame/index.html",
+        logoSrc: "./games/goosegame/logo.webp",
+        fontsize: 0.9,
+        keywords: [],
+        id: "goosegame",
+      },
+      {
+        name: "Cuphead",
+        path: "./games/cuphead/index.html",
+        logoSrc: "./games/cuphead/logo.png",
+        keywords: [],
+        id: "cuphead",
+      },
+      {
+        name: "World's hardest game",
+        path: "./games/hardestgame/index.html",
+        logoSrc: "./games/hardestgame/logo.jpg",
+        keywords: [],
+        id: "hardestgame",
+      },
+    ];
+
+    async function loadBadges() {
+      try {
+        const res = await fetch(`${serverurl}/api/v1/trending`);
+        badgeData = await res.json();
+      } catch (e) {
+        console.error("Failed to load badges", e);
       }
-      gtag("js", new Date());
+    }
 
-      gtag("config", "G-YR0R8TVKF5");
-    </script>
-    <!-- SSO -->
-    <meta
-      name="description"
-      content="Play free online games at hamacgaming! Enjoy a variety of fun and exciting games directly in your browser. No downloads required!"
-    />
-    <meta
-      name="keywords"
-      content="gaming, hamacgaming, fun, free games, online games, browser games, online, browser, unblocked, school, unblocked games, unblocked school, unblocked games 66, unblocked games 77, unblocked games 24h, unblocked games 76, unblocked games 999, unblocked games 500, unblocked games 300, unblocked games 123, unblocked games 1v1lol, unblocked games 90s, unblocked games 2020, unblocked games 2021, unblocked games 2022, unblocked games 2023, unblocked games 2026, unblocked games 2024, unblocked games 2025"
-    />
-    <meta name="" />
-    <title>hamacgaming</title>
-    <script type="module">
-      import { inject } from "@vercel/analytics";
-      inject();
-      import { injectSpeedInsights } from "@vercel/speed-insights";
-      injectSpeedInsights();
-    </script>
-    <link
-      rel="stylesheet"
-      crossorigin
-      href="/style.css"
-    />
-    <meta
-      name="description"
-      content="Play free online games at hamacgaming! Enjoy a variety of fun and exciting games directly in your browser. No downloads required!"
-    />
-  </head>
+    var searchResults = games;
 
-  <body>
-    <div class="background"></div>
-    <div
-      class="games"
-      id="games"
-    ></div>
-    <label
-      class="search"
-      for="search"
-    >
-      <img
-        class="searchIcon"
-        src="/assets/search.svg"
-      />
-      <input
-        type="text"
-        placeholder="Search"
-        class="input"
-        id="search"
-      />
-    </label>
-    <script>
+    // Move search event listener attachment to after DOM is loaded
+    document.addEventListener("DOMContentLoaded", function () {
       var search = document.getElementById("search");
 
-      var games = [
-        {
-          name: "1v1.lol",
-          path: "./games/1v1.lol/index.html",
-          logoSrc: "./games/1v1.lol/logo.webp",
-          keywords: [],
-        },
-        {
-          name: "2048",
-          path: "./games/2048/index.html",
-          logoSrc: "./games/2048/logo.png",
-          keywords: [],
-        },
-        {
-          name: "A game about climbing",
-          path: "./games/gameaboutclimbing/index.html",
-          logoSrc: "./games/gameaboutclimbing/logo.png",
-          keywords: [],
-          fontsize: 0.8,
-        },
-        {
-          name: "A small world cup",
-          path: "./games/asmallworldcup/index.html",
-          logoSrc: "./games/asmallworldcup/logo.webp",
-          keywords: [],
-        },
-        {
-          name: "Bitlife sim",
-          path: "./games/bitlife/index.html",
-          logoSrc: "./games/bitlife/logo.png",
-          keywords: [],
-        },
-        {
-          name: "Bloons td 5",
-          path: "./games/td5/index.html",
-          logoSrc: "./games/td5/logo.png",
-          keywords: [],
-        },
-        {
-          name: "Cookie clicker",
-          path: "./games/cookieclicker/index.html",
-          logoSrc: "./games/cookieclicker/logo.png",
-          keywords: [],
-        },
-        {
-          name: "Crossy road",
-          path: "./games/crossy/index.html",
-          logoSrc: "./games/crossy/logo.webp",
-          keywords: [],
-        },
-        {
-          name: "DOOM",
-          path: "./games/webdoom/index.html",
-          logoSrc: "./games/webdoom/logo.webp",
-          keywords: [],
-        },
-        {
-          name: "Elastic man",
-          path: "./games/elasticman/index.html",
-          logoSrc: "./games/elasticman/logo.webp",
-          keywords: [],
-        },
-        {
-          name: "Granny",
-          path: "./games/Granny/index.html",
-          logoSrc: "./games/Granny/logo.webp",
-          keywords: [],
-        },
-        {
-          name: "Hollow knight",
-          path: "./games/hollow-knight/index.html",
-          logoSrc: "./games/hollow-knight/logo.jpg",
-          keywords: [],
-        },
-        {
-          name: "Jelly truck",
-          path: "./games/jellytruck/index.html",
-          logoSrc: "./games/jellytruck/logo.jpg",
-          keywords: [],
-        },
-        {
-          name: "Mario kart",
-          path: "./games/mariokart/index.html",
-          logoSrc: "./games/mariokart/logo.jpeg",
-          keywords: [],
-        },
-        {
-          name: "Minecraft",
-          path: "./games/minecraft/index.html",
-          logoSrc: "./games/minecraft/logo.webp",
-          keywords: [],
-        },
-        {
-          name: "Mini golf",
-          path: "./games/miniputt/index.html",
-          logoSrc: "./games/miniputt/logo.jpg",
-          keywords: [],
-        },
-        {
-          name: "Moto x3m",
-          path: "./games/moto/x3m/index.html",
-          logoSrc: "./games/moto/x3m/logo.png",
-          keywords: [],
-        },
-        {
-          name: "Mrmine",
-          path: "./games/mrmine/index.html",
-          logoSrc: "./games/mrmine/logo.webp",
-          keywords: [],
-        },
-        {
-          name: "Opposite day",
-          path: "./games/oppositeday/index.html",
-          logoSrc: "./games/oppositeday/logo.webp",
-          keywords: [],
-        },
-        {
-          name: "OvO",
-          path: "./games/ovo/index.html",
-          logoSrc: "./games/ovo/logo.webp",
-          keywords: [],
-        },
-        {
-          name: "Pacman",
-          path: "./games/pacman/index.html",
-          logoSrc: "./games/pacman/logo.png",
-          keywords: [],
-        },
-        {
-          name: "Papas freezeria",
-          path: "./games/papasfreezieria/index.html",
-          logoSrc: "./games/papasfreezieria/logo.webp",
-          keywords: [],
-        },
-        {
-          name: "Papas hotdogs",
-          path: "./games/papashotdogs/index.html",
-          logoSrc: "./games/papashotdogs/logo.jpg",
-          keywords: [],
-        },
-        {
-          name: "Papas pizzeria",
-          path: "./games/papaspizzeria/index.html",
-          logoSrc: "./games/papaspizzeria/logo.webp",
-          keywords: [],
-        },
-        {
-          name: "Paper io",
-          path: "./games/paperio/index.html",
-          logoSrc: "./games/paperio/logo.webp",
-          keywords: [],
-        },
-        {
-          name: "Plants vs Zombies",
-          path: "./games/pvz/index.html",
-          logoSrc: "./games/pvz/logo.webp",
-          keywords: [],
-        },
-        {
-          name: "Ragdoll archers",
-          path: "./games/ragarchers/index.html",
-          logoSrc: "./games/ragarchers/logo.webp",
-          keywords: [],
-        },
-        {
-          name: "Ragdoll hit",
-          path: "./games/ragdoll/index.html",
-          logoSrc: "./games/ragdoll/logo.webp",
-          keywords: [],
-        },
-        {
-          name: "Run 3",
-          path: "./games/run3/index.html",
-          logoSrc: "./games/run3/logo.png",
-          keywords: [],
-        },
-        {
-          name: "Slope",
-          path: "./games/slope/index.html",
-          logoSrc: "./games/slope/logo.jpg",
-          keywords: [],
-        },
-        {
-          name: "Slope3",
-          path: "./games/slope3/index.html",
-          logoSrc: "./games/slope3/logo.webp",
-          keywords: [],
-        },
-        {
-          name: "Snow rider 3d",
-          path: "./games/Snow-Rider3D/index.html",
-          logoSrc: "./games/Snow-Rider3D/logo.png",
-          keywords: [],
-        },
-        {
-          name: "Space waves",
-          path: "./games/spacewaves/index.html",
-          logoSrc: "./games/spacewaves/logo.png",
-          keywords: [],
-        },
-        {
-          name: "Stickman hook",
-          path: "./games/stickmanhook/index.html",
-          logoSrc: "./games/stickmanhook/logo.webp",
-          keywords: [],
-        },
-        {
-          name: "Subway surfers",
-          path: "./games/subway/index.html",
-          logoSrc: "./games/subway/logo.webp",
-          keywords: [],
-        },
-        {
-          name: "Terraria",
-          path: "./games/terraria/index.html",
-          logoSrc: "./games/terraria/logo.webp",
-          keywords: [],
-        },
-        {
-          name: "Tetris",
-          path: "./games/tetris/index.html",
-          logoSrc: "./games/tetris/logo.webp",
-          keywords: [],
-        },
-        {
-          name: "The impossible quiz",
-          path: "./games/impossiblequiz/index.html",
-          logoSrc: "./games/impossiblequiz/logo.png",
-          keywords: [],
-        },
-        {
-          name: "Drive mad",
-          path: "./games/drivemad/index.html",
-          logoSrc: "./games/drivemad/logo.png",
-          keywords: [],
-        },
-        {
-          name: "Angry birds",
-          path: "./games/angry/index.html",
-          logoSrc: "./games/angry/logo.webp",
-          keywords: [],
-        },
-        {
-          name: "They are coming",
-          path: "./games/zombiedefense/index.html",
-          logoSrc: "./games/zombiedefense/logo.png",
-          keywords: [],
-        },
-        {
-          name: "Tiny fishing",
-          path: "./games/tinyFishing/index.html",
-          logoSrc: "./games/tinyFishing/logo.jpg",
-          keywords: [],
-        },
-        {
-          name: "Ultrakill",
-          path: "./games/ultrakill/index.html",
-          logoSrc: "./games/ultrakill/logo.png",
-          keywords: [],
-        },
-        {
-          name: "Untitled goose game",
-          path: "./games/goosegame/index.html",
-          logoSrc: "./games/goosegame/logo.webp",
-          fontsize: 0.9,
-          keywords: [],
-        },
-        {
-          name: "World's hardest game",
-          path: "./games/hardestgame/index.html",
-          logoSrc: "./games/hardestgame/logo.jpg",
-          keywords: [],
-        },
-      ];
+      // Initial display of all games
+      updateGames();
 
-      var searchResults = games;
-
-      // Move search event listener attachment to after DOM is loaded
-      document.addEventListener("DOMContentLoaded", function () {
-        var search = document.getElementById("search");
-
-        search.addEventListener("input", function () {
-          updateGames();
-        });
-
-        // Initial display of all games
+      search.addEventListener("input", function () {
         updateGames();
       });
+    });
 
-      function updateGames() {
-        searchResults = games.filter(
-          (game) =>
-            game.name
-              .toLowerCase()
-              .includes(document.getElementById("search").value.toLowerCase()) ||
-            game.keywords.includes(document.getElementById("search").value.toLowerCase()),
-        );
-        if (searchResults.length == 0) {
-          searchResults = games;
-        }
-
-        gamesChanged = true;
-        if (gamesChanged) {
-          searchResults.sort((a, b) => a.name.localeCompare(b.name));
-          const gamesDiv = document.getElementById("games");
-          gamesDiv.innerHTML = "";
-          searchResults.forEach((element) => {
-            const gameButton = document.createElement("a");
-            const gameLogo = document.createElement("img");
-            const gameLabel = document.createElement("h4");
-
-            // Set the alt attribute for the logo
-            gameLogo.alt = `game logo: ${element.name}`;
-
-            gameButton.rel = "nofollow";
-
-            gameLogo.src = element.logoSrc;
-            gameButton.className = "game";
-            gameButton.href = element.path;
-            gameButton.style.textDecoration = "none";
-            gameButton.style.color = "white";
-            gameLogo.style.borderRadius = "1rem";
-            gameLabel.textContent = " " + element.name + " ";
-            gameButton.appendChild(gameLogo);
-            gameButton.appendChild(gameLabel);
-            try {
-              if (element.fontsize) {
-                gameButton.style.fontSize = element.fontsize + "em";
-              }
-            } catch {}
-
-            gamesDiv.appendChild(gameButton);
-          });
-        }
-        gamesChanged = false;
+    function updateGames() {
+      searchResults = games.filter(
+        (game) =>
+          game.name
+            .toLowerCase()
+            .includes(document.getElementById("search").value.toLowerCase()) ||
+          game.keywords.includes(document.getElementById("search").value.toLowerCase()),
+      );
+      if (searchResults.length == 0) {
+        searchResults = games;
       }
 
       gamesChanged = true;
-      updateGames();
+      if (gamesChanged) {
+        searchResults.sort((a, b) => a.name.localeCompare(b.name));
+        const gamesDiv = document.getElementById("games");
+        gamesDiv.innerHTML = "";
 
-      document.body.innerHTML +=
-        "<h1 style='text-align: center; margin-top: 2em;'>More games coming soon!</h1>";
-      document.body.innerHTML +=
-        "<p style='text-align: center; margin-top: 2em;'>Credit to aukak for a whole bunch of these games :D (<a href='https://github.com/aukak' target='_blank'>GitHub profile</a>)</p>";
-    </script>
-  </body>
+        searchResults.forEach((element) => {
+          const gameButton = document.createElement("a");
+          const gameLogo = document.createElement("img");
+          const gameLabel = document.createElement("h4");
+          const gameBadge = document.createElement("div");
+
+          // Set the alt attribute for the logo
+          gameLogo.alt = `game logo: ${element.name}`;
+
+          gameButton.rel = "nofollow";
+
+          gameLogo.src = element.logoSrc;
+          gameButton.className = "game";
+          gameButton.href = element.path;
+          gameButton.style.textDecoration = "none";
+          gameButton.style.color = "white";
+          gameLogo.style.borderRadius = "1rem";
+          gameLabel.textContent = " " + element.name + " ";
+          gameButton.appendChild(gameLogo);
+          gameButton.appendChild(gameLabel);
+
+          gameButton.addEventListener("click", async (e) => {
+            e.preventDefault()
+            console.log(await fetch(`${serverurl}/api/v1/click`, {
+              method: "PUT",
+              body: JSON.stringify({
+                "id": element.id
+              })
+            }))
+            const a = document.createElement("a");
+            a.src = element.path;
+            a.click();
+          })
+          try {
+            if (element.fontsize) {
+              gameButton.style.fontSize = element.fontsize + "em";
+            }
+          } catch { }
+          gamesDiv.appendChild(gameButton);
+        });
+
+        function createTrendingBadge(gameButton) {
+          gameButton.remove();
+        }
+      }
+      try {
+        if (badgeData == {}) {
+          loadBadges();
+        }
+        if (badgeData) {
+          badgeData.forEach((badge) => {
+            console.error(badge.id);
+          });
+        } else {
+          console.log("no badgeData");
+        }
+      } catch { }
+      gamesChanged = false;
+    }
+
+    gamesChanged = true;
+    updateGames();
+
+    document.body.innerHTML +=
+      "<h1 style='text-align: center; margin-top: 2em;'>More games coming soon!</h1>";
+    document.body.innerHTML +=
+      "<p style='text-align: center; margin-top: 2em;'>Credit to aukak for a whole bunch of these games :D (<a href='https://github.com/aukak' target='_blank'>GitHub profile</a>)</p>";
+  </script>
+</body>
+
 </html>
