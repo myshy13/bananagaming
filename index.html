@@ -436,15 +436,14 @@
           gameButton.appendChild(gameLabel);
 
           gameButton.addEventListener("click", async (e) => {
+            e.preventDefault()
             console.log(await fetch(`${serverurl}/api/v1/click`, {
               method: "PUT",
               body: JSON.stringify({
                 "id": element.id
               })
             }))
-            const a = document.createElement("a");
-            a.src = element.path;
-            a.click();
+            window.location.href = element.path
           })
           try {
             if (element.fontsize) {
