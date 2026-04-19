@@ -2526,9 +2526,7 @@ var UnityModule = (function() {
                 );
                 var resumeInterval = Module.setInterval(tryToResumeAudioContext, 400);
                 WEBAudio.audioWebEnabled = 1
-            } catch (e) {
-                alert("Web Audio API is not supported in this browser")
-            }
+            } catch {}
         }
         function _JS_Sound_Load(ptr, length) {
             if (WEBAudio.audioWebEnabled == 0)
