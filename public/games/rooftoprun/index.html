@@ -1,0 +1,1711 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>
+      window.czyVariables = {
+        countryCode: "AU",
+        device: {
+          os: { name: "Mac OS", version: "10.15" },
+          browser: { name: "Firefox", version: "149.0", major: "149" },
+          device: { type: "desktop" },
+          engine: { name: "Gecko", version: "149.0" },
+        },
+        geo: {
+          countryCode: "AU",
+          city: "Sydney",
+          unlocode: "AU/SYD",
+          longitude: "151.20732",
+          latitude: "-33.86785",
+          region: "New South Wales",
+          regionCode: "NSW",
+          metroCode: null,
+          postalCode: "1001",
+        },
+      }
+    </script>
+    <title>Rooftop Run Game Files - Crazy Games</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="robots"
+      content="noindex, follow" />
+    <meta
+      name="description"
+      content="The game files for Rooftop Run, a free browser game on CrazyGames.com" />
+    <meta
+      http-equiv="Content-Type"
+      content="text/html; charset=utf-8" />
+    <meta
+      http-equiv="Accept-CH"
+      content="DPR" />
+    <meta
+      name="viewport"
+      content="width=device-width, maximum-scale=1.0, initial-scale=1.0, user-scalable=no, minimal-ui" />
+    <link
+      rel="preconnect"
+      href="https://builds.crazygames.com" />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Nunito:wght@400;600;700;800;900"
+      as="style"
+      onload="
+        this.onload = null
+        this.rel = 'stylesheet'
+      " />
+    <style id="ziggyLoaderStyles">
+      html {
+        width: 100%;
+        height: 100%;
+        position: relative;
+      }
+      body {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-color: #13141e;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+      }
+
+      .ziggyLoader {
+        width: 100%;
+        height: 100%;
+        position: relative;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        color: #f9faff;
+        font-family: "Nunito", Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        position: absolute;
+        z-index: 3;
+        background-image: linear-gradient(180deg, #090c15 0%, #16143c 50%, #452a65 100%);
+      }
+
+      @keyframes bob {
+        0% {
+          transform: translate(0px, 0px);
+        }
+        50% {
+          transform: translate(0px, 10.5px);
+        }
+        100% {
+          transform: translate(0px, 0px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="ziggyLoader"
+      id="ziggyLoader">
+      <div class="container">
+        <svg
+          viewBox="0 0 46 50"
+          focusable="false"
+          aria-hidden="true"
+          style="
+            opacity: 0.5;
+            display: inline-block;
+            fill: currentcolor;
+            height: 24px;
+            width: 24px;
+            width: 46px;
+            height: 50px;
+            -webkit-animation: bob 800ms linear infinite normal forwards;
+            animation: bob 800ms linear infinite normal forwards;
+          ">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M39.9436 1.74993C39.685 1.46063 39.3511 1.33714 38.9704 1.33714L38.9668 1.35126C37.5519 1.35126 35.4655 3.05179 34.004 4.4348C30.9264 2.96006 27.145 2.2368 22.552 2.2368C17.959 2.2368 14.1776 2.96006 11.1036 4.43127C9.64206 3.04826 7.55563 1.34773 6.14434 1.34773C5.76009 1.34773 5.42971 1.47121 5.17116 1.76051C2.97341 4.23723 2.76513 10.1679 2.84414 13.5831C1.853 16.2504 1.35025 19.3692 1.35025 22.9325C1.35025 30.4191 3.53362 35.9653 7.83215 39.4334C10.7302 41.7655 14.5116 43.1097 19.3308 43.5119C19.1291 43.6103 18.9246 43.7083 18.7177 43.8075C18.3463 43.9855 17.9671 44.1673 17.5819 44.3621L15.8367 45.2018L14.8455 45.6781C14.5704 45.8188 14.2933 45.9551 14.013 46.0931C13.3089 46.4395 12.5847 46.7959 11.8218 47.2552L11.5597 47.3892C11.4843 47.4421 11.4161 47.5303 11.4017 47.6327C11.3658 47.8232 11.4986 48.0031 11.6926 48.0313C11.996 48.0753 12.2985 48.1241 12.6008 48.1729C13.2681 48.2806 13.935 48.3883 14.6121 48.4441L15.3483 48.5253C15.5925 48.55 15.8331 48.5711 16.0845 48.5852L17.5604 48.6664C17.7902 48.6734 18.0201 48.6734 18.2499 48.6734C19.9987 48.6734 21.7548 48.557 23.4929 48.2889C25.4608 47.996 27.3964 47.4563 29.253 46.7048C31.106 45.9533 32.8728 44.9725 34.4744 43.7835C37.6489 41.3597 40.1447 38.0998 41.6278 34.4694C42.1701 33.1534 42.5795 31.788 42.8668 30.4015C43.4557 28.1753 43.7537 25.6845 43.7537 22.9255C43.7537 19.3727 43.2546 16.2609 42.267 13.5937C42.3496 10.182 42.1449 4.23017 39.9436 1.74993ZM33.7454 2.83305C35.8857 0.927886 37.6022 0 38.9704 0C39.7712 0 40.4607 0.299887 40.9743 0.874965C43.3156 3.51044 43.7214 9.07776 43.6388 13.3785C44.6228 16.141 45.122 19.3515 45.122 22.9255C45.122 25.7585 44.8131 28.3764 44.199 30.7014C43.883 32.1973 43.4449 33.6332 42.8955 34.9633C41.3082 38.8477 38.6867 42.2594 35.3003 44.8419C33.6269 46.0838 31.7703 47.1246 29.7773 47.9325C27.7842 48.7369 25.7409 49.2979 23.7119 49.5978C21.9918 49.8659 20.1567 50 18.2571 50C18.0201 50 17.7794 50 17.5424 49.9929H17.4886L16.0126 49.9118C15.7397 49.8977 15.474 49.8765 15.201 49.8448L14.4828 49.7671C13.7915 49.7105 13.1226 49.6037 12.4731 49.4999C12.4343 49.4937 12.3956 49.4875 12.3569 49.4814L12.355 49.4811C12.0683 49.4353 11.7817 49.3895 11.5058 49.3473C11.0498 49.2838 10.6332 49.0368 10.3639 48.6699C10.0981 48.31 9.99039 47.8549 10.0622 47.4174C10.134 46.9764 10.389 46.5707 10.7697 46.299L10.8487 46.2426L10.9348 46.1967L11.1575 46.0838C11.9511 45.6075 12.6837 45.2477 13.3947 44.8984L13.3947 44.8984C13.4415 44.8754 13.4882 44.8525 13.5348 44.8297C13.7671 44.7158 13.9969 44.6031 14.2243 44.4856L14.2386 44.4785L14.253 44.4715L14.885 44.1681C11.7716 43.4413 9.16085 42.2135 6.97747 40.4565C2.34857 36.7168 0 30.8178 0 22.922C0 19.3374 0.502749 16.1198 1.4903 13.3538C1.4077 9.06012 1.81708 3.50692 4.15488 0.871437C4.66122 0.299887 5.3543 0 6.15152 0C7.51972 0 9.23626 0.927886 11.373 2.82952C14.4757 1.52413 18.1421 0.885549 22.5556 0.885549C26.969 0.885549 30.6427 1.52413 33.7454 2.83305ZM22.5592 9.70929C27.0732 9.70929 30.2944 10.5419 32.3951 12.2389C34.8766 14.2499 36.0904 17.7463 36.0904 22.9255C36.0904 33.8978 30.6822 36.1417 22.5592 36.1417C14.4361 36.1417 9.02797 33.8943 9.02797 22.9255C9.02797 17.7498 10.2346 14.2464 12.7232 12.2389C14.824 10.5349 18.0452 9.70929 22.5592 9.70929ZM17.9051 28.3058C19.4601 28.3058 20.7313 27.0675 20.7313 25.5504V22.3081C20.6559 22.3151 20.5769 22.3187 20.4979 22.3187C19.2482 22.3187 18.2391 21.3343 18.2391 20.1171C18.2391 19.1293 18.9034 18.2931 19.8192 18.0144C19.3164 17.5593 18.6449 17.277 17.9051 17.277C16.3502 17.277 15.0789 18.5154 15.0789 20.0325V25.5504C15.0789 27.0639 16.3502 28.3058 17.9051 28.3058ZM27.2096 28.3058C28.7646 28.3058 30.0358 27.0675 30.0358 25.5504V22.0929C29.9245 22.1105 29.8132 22.1211 29.6982 22.1211C28.4485 22.1211 27.4395 21.1367 27.4395 19.9196C27.4395 18.967 28.0607 18.159 28.9262 17.8521C28.4485 17.4922 27.856 17.277 27.2096 17.277C25.6547 17.277 24.3834 18.5154 24.3834 20.0325V25.5504C24.3834 27.0639 25.6547 28.3058 27.2096 28.3058Z"
+            fill="white"></path>
+        </svg>
+        <div style="margin-top: 18px; opacity: 0.5">Preparing your game…</div>
+      </div>
+    </div>
+    <script>
+      ;(() => {
+        var e = {
+            560: function (e, t, n) {
+              var a
+              !(function (r) {
+                "use strict"
+                function s(e, t) {
+                  var n = (65535 & e) + (65535 & t)
+                  return (((e >> 16) + (t >> 16) + (n >> 16)) << 16) | (65535 & n)
+                }
+                function o(e, t, n, a, r, o) {
+                  return s(((i = s(s(t, e), s(a, o))) << (c = r)) | (i >>> (32 - c)), n)
+                  var i, c
+                }
+                function i(e, t, n, a, r, s, i) {
+                  return o((t & n) | (~t & a), e, t, r, s, i)
+                }
+                function c(e, t, n, a, r, s, i) {
+                  return o((t & a) | (n & ~a), e, t, r, s, i)
+                }
+                function d(e, t, n, a, r, s, i) {
+                  return o(t ^ n ^ a, e, t, r, s, i)
+                }
+                function u(e, t, n, a, r, s, i) {
+                  return o(n ^ (t | ~a), e, t, r, s, i)
+                }
+                function l(e, t) {
+                  var n, a, r, o, l
+                  ;((e[t >> 5] |= 128 << (t % 32)), (e[14 + (((t + 64) >>> 9) << 4)] = t))
+                  var h = 1732584193,
+                    g = -271733879,
+                    f = -1732584194,
+                    p = 271733878
+                  for (n = 0; n < e.length; n += 16)
+                    ((a = h),
+                      (r = g),
+                      (o = f),
+                      (l = p),
+                      (h = i(h, g, f, p, e[n], 7, -680876936)),
+                      (p = i(p, h, g, f, e[n + 1], 12, -389564586)),
+                      (f = i(f, p, h, g, e[n + 2], 17, 606105819)),
+                      (g = i(g, f, p, h, e[n + 3], 22, -1044525330)),
+                      (h = i(h, g, f, p, e[n + 4], 7, -176418897)),
+                      (p = i(p, h, g, f, e[n + 5], 12, 1200080426)),
+                      (f = i(f, p, h, g, e[n + 6], 17, -1473231341)),
+                      (g = i(g, f, p, h, e[n + 7], 22, -45705983)),
+                      (h = i(h, g, f, p, e[n + 8], 7, 1770035416)),
+                      (p = i(p, h, g, f, e[n + 9], 12, -1958414417)),
+                      (f = i(f, p, h, g, e[n + 10], 17, -42063)),
+                      (g = i(g, f, p, h, e[n + 11], 22, -1990404162)),
+                      (h = i(h, g, f, p, e[n + 12], 7, 1804603682)),
+                      (p = i(p, h, g, f, e[n + 13], 12, -40341101)),
+                      (f = i(f, p, h, g, e[n + 14], 17, -1502002290)),
+                      (h = c(
+                        h,
+                        (g = i(g, f, p, h, e[n + 15], 22, 1236535329)),
+                        f,
+                        p,
+                        e[n + 1],
+                        5,
+                        -165796510,
+                      )),
+                      (p = c(p, h, g, f, e[n + 6], 9, -1069501632)),
+                      (f = c(f, p, h, g, e[n + 11], 14, 643717713)),
+                      (g = c(g, f, p, h, e[n], 20, -373897302)),
+                      (h = c(h, g, f, p, e[n + 5], 5, -701558691)),
+                      (p = c(p, h, g, f, e[n + 10], 9, 38016083)),
+                      (f = c(f, p, h, g, e[n + 15], 14, -660478335)),
+                      (g = c(g, f, p, h, e[n + 4], 20, -405537848)),
+                      (h = c(h, g, f, p, e[n + 9], 5, 568446438)),
+                      (p = c(p, h, g, f, e[n + 14], 9, -1019803690)),
+                      (f = c(f, p, h, g, e[n + 3], 14, -187363961)),
+                      (g = c(g, f, p, h, e[n + 8], 20, 1163531501)),
+                      (h = c(h, g, f, p, e[n + 13], 5, -1444681467)),
+                      (p = c(p, h, g, f, e[n + 2], 9, -51403784)),
+                      (f = c(f, p, h, g, e[n + 7], 14, 1735328473)),
+                      (h = d(
+                        h,
+                        (g = c(g, f, p, h, e[n + 12], 20, -1926607734)),
+                        f,
+                        p,
+                        e[n + 5],
+                        4,
+                        -378558,
+                      )),
+                      (p = d(p, h, g, f, e[n + 8], 11, -2022574463)),
+                      (f = d(f, p, h, g, e[n + 11], 16, 1839030562)),
+                      (g = d(g, f, p, h, e[n + 14], 23, -35309556)),
+                      (h = d(h, g, f, p, e[n + 1], 4, -1530992060)),
+                      (p = d(p, h, g, f, e[n + 4], 11, 1272893353)),
+                      (f = d(f, p, h, g, e[n + 7], 16, -155497632)),
+                      (g = d(g, f, p, h, e[n + 10], 23, -1094730640)),
+                      (h = d(h, g, f, p, e[n + 13], 4, 681279174)),
+                      (p = d(p, h, g, f, e[n], 11, -358537222)),
+                      (f = d(f, p, h, g, e[n + 3], 16, -722521979)),
+                      (g = d(g, f, p, h, e[n + 6], 23, 76029189)),
+                      (h = d(h, g, f, p, e[n + 9], 4, -640364487)),
+                      (p = d(p, h, g, f, e[n + 12], 11, -421815835)),
+                      (f = d(f, p, h, g, e[n + 15], 16, 530742520)),
+                      (h = u(
+                        h,
+                        (g = d(g, f, p, h, e[n + 2], 23, -995338651)),
+                        f,
+                        p,
+                        e[n],
+                        6,
+                        -198630844,
+                      )),
+                      (p = u(p, h, g, f, e[n + 7], 10, 1126891415)),
+                      (f = u(f, p, h, g, e[n + 14], 15, -1416354905)),
+                      (g = u(g, f, p, h, e[n + 5], 21, -57434055)),
+                      (h = u(h, g, f, p, e[n + 12], 6, 1700485571)),
+                      (p = u(p, h, g, f, e[n + 3], 10, -1894986606)),
+                      (f = u(f, p, h, g, e[n + 10], 15, -1051523)),
+                      (g = u(g, f, p, h, e[n + 1], 21, -2054922799)),
+                      (h = u(h, g, f, p, e[n + 8], 6, 1873313359)),
+                      (p = u(p, h, g, f, e[n + 15], 10, -30611744)),
+                      (f = u(f, p, h, g, e[n + 6], 15, -1560198380)),
+                      (g = u(g, f, p, h, e[n + 13], 21, 1309151649)),
+                      (h = u(h, g, f, p, e[n + 4], 6, -145523070)),
+                      (p = u(p, h, g, f, e[n + 11], 10, -1120210379)),
+                      (f = u(f, p, h, g, e[n + 2], 15, 718787259)),
+                      (g = u(g, f, p, h, e[n + 9], 21, -343485551)),
+                      (h = s(h, a)),
+                      (g = s(g, r)),
+                      (f = s(f, o)),
+                      (p = s(p, l)))
+                  return [h, g, f, p]
+                }
+                function h(e) {
+                  var t,
+                    n = "",
+                    a = 32 * e.length
+                  for (t = 0; t < a; t += 8)
+                    n += String.fromCharCode((e[t >> 5] >>> (t % 32)) & 255)
+                  return n
+                }
+                function g(e) {
+                  var t,
+                    n = []
+                  for (n[(e.length >> 2) - 1] = void 0, t = 0; t < n.length; t += 1) n[t] = 0
+                  var a = 8 * e.length
+                  for (t = 0; t < a; t += 8) n[t >> 5] |= (255 & e.charCodeAt(t / 8)) << (t % 32)
+                  return n
+                }
+                function f(e) {
+                  var t,
+                    n,
+                    a = "0123456789abcdef",
+                    r = ""
+                  for (n = 0; n < e.length; n += 1)
+                    ((t = e.charCodeAt(n)), (r += a.charAt((t >>> 4) & 15) + a.charAt(15 & t)))
+                  return r
+                }
+                function p(e) {
+                  return unescape(encodeURIComponent(e))
+                }
+                function y(e) {
+                  return (function (e) {
+                    return h(l(g(e), 8 * e.length))
+                  })(p(e))
+                }
+                function S(e, t) {
+                  return (function (e, t) {
+                    var n,
+                      a,
+                      r = g(e),
+                      s = [],
+                      o = []
+                    for (
+                      s[15] = o[15] = void 0, r.length > 16 && (r = l(r, 8 * e.length)), n = 0;
+                      n < 16;
+                      n += 1
+                    )
+                      ((s[n] = 909522486 ^ r[n]), (o[n] = 1549556828 ^ r[n]))
+                    return ((a = l(s.concat(g(t)), 512 + 8 * t.length)), h(l(o.concat(a), 640)))
+                  })(p(e), p(t))
+                }
+                function m(e, t, n) {
+                  return t ? (n ? S(t, e) : f(S(t, e))) : n ? y(e) : f(y(e))
+                }
+                void 0 ===
+                  (a = function () {
+                    return m
+                  }.call(t, n, t, e)) || (e.exports = a)
+              })()
+            },
+            490: function (e, t, n) {
+              "use strict"
+              var a =
+                (this && this.__importDefault) ||
+                function (e) {
+                  return e && e.__esModule ? e : { default: e }
+                }
+              Object.defineProperty(t, "__esModule", { value: !0 })
+              const r = a(n(90)),
+                s = n(593)
+              var o
+              !(function (e) {
+                ;((e.INIT = "INIT"),
+                  (e.ADD_MSG_LISTENER = "ADD_MSG_LISTENER"),
+                  (e.ADD_STORAGE_LISTENER = "ADD_STORAGE_LISTENER"))
+              })(o || (o = {}))
+              t.default = class {
+                constructor(e, t) {
+                  ;((this.currentState = o.INIT),
+                    (this.handleMsgListener = ({ data: e }) => {
+                      switch ((this.log("msg resp: ", e.type), e.type)) {
+                        case "requestGameDataResponse":
+                          this.handleRequestGameDataResponse(e.data)
+                          break
+                        case "deleteProgressRequest":
+                          this.handleClearGameDataRequest()
+                          break
+                        default:
+                          return
+                      }
+                    }),
+                    (this.handleStorageListener = (e) => {
+                      const { key: t } = e
+                      ;(this.log("storage change"),
+                        null === t
+                          ? this.apsStateData.lsCleared()
+                          : this.apsStateData.handleStorageChange(t))
+                    }),
+                    (this.gameSlug = e),
+                    (this.debug = t),
+                    this.log("init ", e),
+                    (this.apsStateData = new r.default(e, t)),
+                    this.transition())
+                }
+                log(...e) {
+                  this.debug && console.debug("[APS-script] ", ...e)
+                }
+                transition() {
+                  ;(this.log("transitioning... ", this.currentState),
+                    this.currentState === o.INIT
+                      ? (this.currentState = o.ADD_MSG_LISTENER)
+                      : this.currentState === o.ADD_MSG_LISTENER &&
+                        (this.currentState = o.ADD_STORAGE_LISTENER),
+                    this.log("executing... ", this.currentState),
+                    this.execute())
+                }
+                execute() {
+                  return this.currentState === o.ADD_MSG_LISTENER
+                    ? this.addMessageListener()
+                    : this.currentState === o.ADD_STORAGE_LISTENER
+                      ? this.addStorageListener()
+                      : void 0
+                }
+                addMessageListener() {
+                  ;(this.log("add msg lst"),
+                    window.addEventListener("message", this.handleMsgListener),
+                    window.addEventListener("load", function () {
+                      window.parent.postMessage({ type: "apsReady" }, "*")
+                    }))
+                }
+                addStorageListener() {
+                  ;(this.log("add storage lst"),
+                    window.addEventListener("storage", this.handleStorageListener))
+                }
+                handleRequestGameDataResponse(e) {
+                  if (
+                    (this.log("resp data"),
+                    void 0 === this.apsStateData.shouldSyncDataWithParent && this.transition(),
+                    !e)
+                  )
+                    return void this.apsStateData.handleNoAPIData()
+                  const t =
+                      window.localStorage.getItem((0, s.getLSSyncVersion)(this.gameSlug)) || "",
+                    n = e.version
+                  return (
+                    this.log("resp data: ", n, t),
+                    (this.apsStateData.shouldSyncDataWithParent = !0),
+                    t
+                      ? t === n
+                        ? (this.log("same data: "),
+                          void this.apsStateData.handleSameLSAndAPIData(e))
+                        : (this.log("using api data: "),
+                          this.apsStateData.handleOverwriteLS(e),
+                          void this.apsStateData.sendLoadGameEvent())
+                      : (this.log("no local browser data: "),
+                        void this.apsStateData.handleNoLSData(e))
+                  )
+                }
+                handleClearGameDataRequest() {
+                  ;(localStorage.clear(),
+                    window.parent.postMessage({ type: "deleteProgressRequestResponse" }, "*"))
+                }
+              }
+            },
+            90: (e, t, n) => {
+              "use strict"
+              Object.defineProperty(t, "__esModule", { value: !0 })
+              const a = n(614),
+                r = n(593),
+                s = n(260)
+              t.default = class {
+                constructor(e, t) {
+                  ;((this.isLSDataChanged = !1),
+                    (this.shouldSyncDataWithParent = void 0),
+                    (this.gameDataInitSync = () => {
+                      this.log("sync to parent")
+                      const e = (0, a.v4)(),
+                        t = this.getPlayedTime(),
+                        n = (0, r.getExistingDataFromLS)(),
+                        s = new Date().setMilliseconds(0)
+                      ;(window.parent.postMessage(
+                        {
+                          type: "replaceInitGameData",
+                          data: { store: n, version: e, playedTime: t },
+                        },
+                        "*",
+                      ),
+                        this.setMetadata(e, s, t))
+                    }),
+                    (this.syncChangesToParent = () => {
+                      this.log("sync to parent")
+                      const e = (0, a.v4)(),
+                        t = this.getPlayedTime(),
+                        n = (0, r.getExistingDataFromLS)(),
+                        s = new Date().setMilliseconds(0)
+                      ;(this.shouldSyncDataWithParent &&
+                        window.parent.postMessage(
+                          {
+                            type: "replaceGameData",
+                            data: { store: n, version: e, playedTime: t },
+                          },
+                          "*",
+                        ),
+                        this.setMetadata(e, s, t))
+                    }),
+                    (this.gameSlug = e),
+                    (this.debug = t),
+                    (this.IGNORED_LS_KEYS = [
+                      "test",
+                      (0, r.getLSSyncVersion)(e),
+                      (0, r.getLSSyncTz)(e),
+                      (0, r.getLSSyncPlayedTime)(e),
+                    ]),
+                    (this.gameStartTime = Date.now()))
+                }
+                log(...e) {
+                  this.debug && console.debug("[APS-script-data] ", ...e)
+                }
+                sendLoadGameEvent() {
+                  ;(this.log("loading"),
+                    (0, s.syncMemoryMetadata)(),
+                    window.parent.postMessage({ type: "loadGame" }, "*"))
+                }
+                clearData() {
+                  ;(0, s.restoreLSMetadataFromMemory)()
+                  const e = (0, a.v4)(),
+                    t = new Date().setMilliseconds(0),
+                    n = this.getPlayedTime()
+                  ;(this.setMetadata(e, t, n),
+                    this.log("clear data"),
+                    this.shouldSyncDataWithParent &&
+                      window.parent.postMessage(
+                        { type: "clearGameData", data: { version: e, playedTime: n } },
+                        "*",
+                      ))
+                }
+                lsCleared() {
+                  this.clearData()
+                }
+                handleStorageChange(e) {
+                  ;-1 !== this.IGNORED_LS_KEYS.indexOf(e) ||
+                    e.includes("__SafeLocalStorage__") ||
+                    this.syncChangesToParent()
+                }
+                handleNoAPIData() {
+                  ;(this.log("handling no game specific data"),
+                    (this.shouldSyncDataWithParent = !0),
+                    this.gameDataInitSync())
+                }
+                handleNoLSData(e) {
+                  let t = {}
+                  try {
+                    t = JSON.parse(e.data)
+                  } catch (e) {
+                    return (
+                      this.log("data parsing error (no data): ", e),
+                      void this.sendLoadGameEvent()
+                    )
+                  }
+                  const n = e.metadata.updatedAtTz,
+                    a = e.version
+                  ;((0, r.setNewDataToLS)(t), this.setMetadata(a, n), this.sendLoadGameEvent())
+                }
+                handleSameLSAndAPIData(e) {
+                  try {
+                    const t = JSON.parse(e.data)
+                    ;(0, r.setNewDataToLS)(t)
+                  } catch (e) {
+                    this.log("data parsing error: ", e)
+                  }
+                  this.sendLoadGameEvent()
+                }
+                handleOverwriteLS(e) {
+                  const t = e.version,
+                    { updatedAtTz: n, playedTime: a } = e.metadata || {},
+                    s = JSON.parse(e.data)
+                  ;((0, r.setNewDataToLS)(s), this.setMetadata(t, n, a))
+                }
+                getPlayedTime() {
+                  return (Date.now() - this.gameStartTime) / 1e3
+                }
+                setMetadata(e, t, n) {
+                  const a = (0, r.setLSMetadata)(this.gameSlug, e, t, n)
+                  ;(0, s.setMemoryMetadata)(a)
+                }
+              }
+            },
+            610: function (e, t, n) {
+              "use strict"
+              var a =
+                  (this && this.__awaiter) ||
+                  function (e, t, n, a) {
+                    return new (n || (n = Promise))(function (r, s) {
+                      function o(e) {
+                        try {
+                          c(a.next(e))
+                        } catch (e) {
+                          s(e)
+                        }
+                      }
+                      function i(e) {
+                        try {
+                          c(a.throw(e))
+                        } catch (e) {
+                          s(e)
+                        }
+                      }
+                      function c(e) {
+                        var t
+                        e.done
+                          ? r(e.value)
+                          : ((t = e.value),
+                            t instanceof n
+                              ? t
+                              : new n(function (e) {
+                                  e(t)
+                                })).then(o, i)
+                      }
+                      c((a = a.apply(e, t || [])).next())
+                    })
+                  },
+                r =
+                  (this && this.__importDefault) ||
+                  function (e) {
+                    return e && e.__esModule ? e : { default: e }
+                  }
+              Object.defineProperty(t, "__esModule", { value: !0 })
+              const s = r(n(560)),
+                o = n(870),
+                i = "FILE_DATA",
+                c = (e) => +new Date(e)
+              t.default = class {
+                constructor(e, t, n) {
+                  ;((this.unityRawIDBId = e),
+                    (this.customSaveFileName = t),
+                    (this.debug = n),
+                    (this.handleMsgListener = (e) =>
+                      a(this, void 0, void 0, function* () {
+                        switch ((this.log("msg resp: ", e), e.data.type)) {
+                          case "getUpdatedAtTz":
+                            this.log("Requested getUpdatedAtTz")
+                            const t = yield this.getUpdatedAtTz()
+                            window.parent.postMessage(
+                              Object.assign({ type: "getUpdatedAtTzResult" }, t),
+                              "*",
+                            )
+                            break
+                          case "getExistingIndexedData":
+                            this.log("Requested getExistingIndexedData")
+                            const n = yield this.getExistingIndexedData()
+                            window.parent.postMessage(
+                              Object.assign({ type: "getExistingIndexedDataResult" }, n),
+                              "*",
+                            )
+                            break
+                          case "installUnityGameData":
+                            this.log("Requested installUnityGameData")
+                            const a = yield this.setDataInIndexedDB(e.data.gameData)
+                            window.parent.postMessage(
+                              Object.assign({ type: "installUnityGameDataResult" }, a),
+                              "*",
+                            )
+                            break
+                          case "deleteProgressRequest":
+                            this.log("Request deleteProgressRequest")
+                            const r = yield this.clearDataForGame()
+                            window.parent.postMessage(
+                              Object.assign({ type: "deleteProgressRequestResponse" }, r),
+                              "*",
+                            )
+                        }
+                      })),
+                    (this.getTimestampOfIDBKey = (e, t) =>
+                      new Promise((n) => {
+                        e.get(t).onsuccess = (e) => {
+                          try {
+                            const t = e.target.result
+                            if (!t || !t.timestamp) return void n(null)
+                            const a = new Date(t.timestamp).setMilliseconds(0)
+                            n(a)
+                          } catch (e) {
+                            return (console.error("[UnityAPS]", e), void n(null))
+                          }
+                        }
+                      })),
+                    (this.openDB = () =>
+                      a(this, void 0, void 0, function* () {
+                        const e = window.indexedDB.open("/idbfs", 21)
+                        return new Promise((t, n) => {
+                          ;((e.onupgradeneeded = this.initIndexedDB),
+                            (e.onsuccess = () =>
+                              a(this, void 0, void 0, function* () {
+                                const n = e.result
+                                t(n)
+                              })),
+                            (e.onerror = (e) => {
+                              ;(console.error("[UnityAPS]", e), n(e))
+                            }))
+                        })
+                      })),
+                    (this.getAllKeys = (e) => {
+                      const t = e.getAllKeys()
+                      return new Promise((e, n) => {
+                        ;((t.onsuccess = () => {
+                          e(t.result)
+                        }),
+                          (t.onerror = (e) => {
+                            ;(console.error("[UnityAPS]", e), n(e))
+                          }))
+                      })
+                    }),
+                    (this.getUpdatedAtTz = () =>
+                      a(this, void 0, void 0, function* () {
+                        try {
+                          const e = yield this.openDB(),
+                            t = e.transaction(i).objectStore(i),
+                            n = yield this.getAllKeys(t),
+                            a = n.findIndex(
+                              (e) => "string" == typeof e && e.endsWith("PlayerPrefs"),
+                            )
+                          let r
+                          if ((-1 !== a && (r = yield this.getTimestampOfIDBKey(t, n[a])), !r))
+                            for (
+                              let e = 0;
+                              e < n.length &&
+                              (e === a || ((r = yield this.getTimestampOfIDBKey(t, n[e])), !r));
+                              e++
+                            );
+                          return { result: r, isSuccessful: !0 }
+                        } catch (e) {
+                          return (console.error("[UnityAPS]", e), { isSuccessful: !1 })
+                        }
+                      })),
+                    (this.getFromObjectStore = (e, t) =>
+                      a(this, void 0, void 0, function* () {
+                        return new Promise((n, a) => {
+                          const r = e.get(t)
+                          ;((r.onsuccess = () => {
+                            n(r.result)
+                          }),
+                            (r.onerror = (e) => {
+                              a(e)
+                            }))
+                        })
+                      })),
+                    (this.putToObjectStore = (e, t, n) =>
+                      a(this, void 0, void 0, function* () {
+                        return new Promise((a, r) => {
+                          const s = e.put(n, t)
+                          ;((s.onsuccess = () => {
+                            a(s.result)
+                          }),
+                            (s.onerror = (e) => {
+                              r(e)
+                            }))
+                        })
+                      })),
+                    (this.getIDBKeysForAPS = () => {
+                      const e = this.getIDBId(),
+                        t = [`/idbfs/${e}`, `/idbfs/${e}/PlayerPrefs`]
+                      return (
+                        this.customSaveFileName && t.push(`/idbfs/${e}/${this.customSaveFileName}`),
+                        t
+                      )
+                    }),
+                    (this.getExistingIndexedData = () =>
+                      a(this, void 0, void 0, function* () {
+                        try {
+                          const e = yield this.openDB(),
+                            t = e.transaction(i).objectStore(i),
+                            n = {}
+                          let a
+                          const r = this.getIDBKeysForAPS()
+                          for (const e of r) {
+                            const r = yield this.getFromObjectStore(t, e)
+                            if (!r) continue
+                            if (!r.timestamp) throw "[APS-U] IDB data incomplete: " + e + r
+                            const s = new Date(r.timestamp)
+                            s.getTime() > ((null == a ? void 0 : a.getTime()) || 0) && (a = s)
+                            const o = Object.assign(Object.assign({}, r), {
+                              timestamp: c(r.timestamp),
+                            })
+                            ;(r.contents && (o.contents = this.uint8ArrayToStr(r.contents)),
+                              (n[e] = o))
+                          }
+                          return 0 === Object.keys(n).length
+                            ? { data: null, isSuccessful: !0 }
+                            : { result: { data: n, updatedAtTz: c(a) }, isSuccessful: !0 }
+                        } catch (e) {
+                          return (console.error("[UnityAPS]", e), { isSuccessful: !1 })
+                        }
+                      })),
+                    (this.setDataInIndexedDB = (e) =>
+                      a(this, void 0, void 0, function* () {
+                        try {
+                          if (!e) return { isSuccessful: !1 }
+                          const t = yield this.openDB(),
+                            n = t.transaction(i, "readwrite").objectStore(i),
+                            a = this.getIDBId()
+                          for (const [t, r] of Object.entries(e)) {
+                            const e = t.split("/")[3],
+                              s = `/idbfs/${a}` + (e ? "/" + e : "")
+                            if (!r.timestamp) throw "[APS-U] API data incomplete:"
+                            const o = Object.assign(Object.assign({}, r), {
+                              timestamp: new Date(r.timestamp),
+                            })
+                            ;(o.contents && (o.contents = this.strToUint8Array(o.contents)),
+                              yield this.putToObjectStore(n, s, o))
+                          }
+                          return { isSuccessful: !0 }
+                        } catch (e) {
+                          return (console.error("[UnityAPS]", e), { isSuccessful: !1 })
+                        }
+                      })),
+                    (this.clearDataForGame = () =>
+                      a(this, void 0, void 0, function* () {
+                        const e = yield this.openDB()
+                        return new Promise((t, n) => {
+                          const a = e.transaction(i, "readwrite").objectStore(i).clear()
+                          ;((a.onsuccess = () => {
+                            t({ isSuccessful: !0 })
+                          }),
+                            (a.onerror = (e) => {
+                              n({ isSuccessful: !1 })
+                            }))
+                        })
+                      })),
+                    (this.uint8ArrayToStr = (e) => (0, o.Encode)(e)),
+                    (this.strToUint8Array = (e) => new Uint8Array((0, o.Decode)(e))),
+                    (this.getIDBId = () => (0, s.default)(this.unityRawIDBId)),
+                    (this.initIndexedDB = (e) => {
+                      const t = e.target.result,
+                        n = e.target.transaction
+                      let a
+                      ;((a = t.objectStoreNames.contains(i)
+                        ? n.objectStore(i)
+                        : t.createObjectStore(i)),
+                        a.indexNames.contains("timestamp") ||
+                          a.createIndex("timestamp", "timestamp", { unique: !1 }))
+                    }),
+                    this.log("init "),
+                    this.addMessageListener())
+                }
+                log(...e) {
+                  this.debug && console.debug("[APS-script] ", ...e)
+                }
+                addMessageListener() {
+                  ;(this.log("add msg lst"),
+                    window.addEventListener("message", this.handleMsgListener),
+                    window.addEventListener("load", function () {
+                      window.parent.postMessage({ type: "unityApsReady" }, "*")
+                    }))
+                }
+                trackProgress(e) {
+                  window.parent.postMessage({ type: "loadprogress", progress: e }, "*")
+                }
+              }
+            },
+            607: function (e, t, n) {
+              "use strict"
+              var a =
+                (this && this.__importDefault) ||
+                function (e) {
+                  return e && e.__esModule ? e : { default: e }
+                }
+              Object.defineProperty(t, "__esModule", { value: !0 })
+              const r = n(593),
+                s = a(n(490)),
+                o = a(n(610))
+              !(function () {
+                const e = (0, r.getQueriesFromUrl)(window.location.href)
+                if (!e) return
+                const {
+                  gameSlug: t,
+                  apsType: n,
+                  unityRawIDBId: a,
+                  debug: i,
+                  customSaveFileName: c,
+                } = e
+                if (!t || !n) throw new Error("Missing query parameters")
+                if ((0, r.isFunctioningStorage)())
+                  switch (n) {
+                    case "unity":
+                      if (!a) throw new Error("Missing query parameters")
+                      new o.default(a, c, i)
+                      break
+                    case "ruffle":
+                    case "iframe":
+                      new s.default(t, i)
+                      break
+                    default:
+                      throw new Error("Invalid apsType")
+                  }
+                else console.warn("Cannot access local-storage")
+              })()
+            },
+            260: (e, t, n) => {
+              "use strict"
+              ;(Object.defineProperty(t, "__esModule", { value: !0 }),
+                (t.restoreLSMetadataFromMemory =
+                  t.syncMemoryMetadata =
+                  t.setMemoryMetadata =
+                    void 0))
+              const a = n(593)
+              let r = {}
+              ;((t.setMemoryMetadata = function (e) {
+                r = Object.assign(Object.assign({}, r), e)
+              }),
+                (t.syncMemoryMetadata = function () {
+                  const e = Object.assign({}, window.localStorage)
+                  Object.keys(e).forEach((t) => {
+                    ;(a.VERSION_REGEX.test(t) || a.TZ_REGEX.test(t) || a.PT_REGEX.test(t)) &&
+                      (r[t] = e[t])
+                  })
+                }),
+                (t.restoreLSMetadataFromMemory = function () {
+                  Object.keys(r).forEach((e) => {
+                    window.localStorage.setItem(e, r[e])
+                  })
+                }))
+            },
+            593: (e, t) => {
+              "use strict"
+              ;(Object.defineProperty(t, "__esModule", { value: !0 }),
+                (t.isValidUrl =
+                  t.setLSMetadata =
+                  t.setNewDataToLS =
+                  t.getExistingDataFromLS =
+                  t.getQueriesFromUrl =
+                  t.isFunctioningStorage =
+                  t.getLSSyncPlayedTime =
+                  t.getLSSyncTz =
+                  t.getLSSyncVersion =
+                  t.PT_REGEX =
+                  t.TZ_REGEX =
+                  t.VERSION_REGEX =
+                    void 0),
+                (t.VERSION_REGEX = /_czy_[a-z,A-Z,0-9,\-]*_version/i),
+                (t.TZ_REGEX = /_czy_[a-z,A-Z,0-9,\-]*_tz/i),
+                (t.PT_REGEX = /_czy_[a-z,A-Z,0-9,\-]*_pt/i))
+              t.getLSSyncVersion = (e) => `_czy_${e}_version`
+              t.getLSSyncTz = (e) => `_czy_${e}_tz`
+              ;((t.getLSSyncPlayedTime = (e) => `_czy_${e}_pt`),
+                (t.isFunctioningStorage = function () {
+                  if (!window.hasOwnProperty("localStorage")) return !1
+                  try {
+                    const e = `__SafeLocalStorage__${Date.now()}`,
+                      t = "test"
+                    return (
+                      window.localStorage.setItem(e, t),
+                      window.localStorage.getItem(e) !== t
+                        ? !1
+                        : (window.localStorage.removeItem(e), !0)
+                    )
+                  } catch (e) {
+                    return !1
+                  }
+                }),
+                (t.getQueriesFromUrl = function (e) {
+                  try {
+                    const { searchParams: t } = new URL(e),
+                      n = t.get("game_slug"),
+                      a = "true" === t.get("debug"),
+                      r = t.get("apsType"),
+                      s = t.get("unityRawIDBId")
+                    return {
+                      gameSlug: n,
+                      debug: a,
+                      apsType: r,
+                      unityRawIDBId: s,
+                      customSaveFileName: t.get("customSaveFileName"),
+                    }
+                  } catch (t) {
+                    return (console.error("Failed to parse URL", e, t), null)
+                  }
+                }),
+                (t.getExistingDataFromLS = function () {
+                  const e = Object.assign({}, window.localStorage)
+                  return (
+                    Object.keys(e).forEach((n) => {
+                      ;(t.VERSION_REGEX.test(n) && delete e[n],
+                        t.TZ_REGEX.test(n) && delete e[n],
+                        t.PT_REGEX.test(n) && delete e[n])
+                    }),
+                    e
+                  )
+                }),
+                (t.setNewDataToLS = function (e) {
+                  Object.keys(e).forEach((t) => {
+                    null === e[t]
+                      ? window.localStorage.removeItem(t)
+                      : window.localStorage.setItem(t, e[t])
+                  })
+                }),
+                (t.setLSMetadata = function (e, n, a, r) {
+                  const s = (0, t.getLSSyncVersion)(e),
+                    o = (0, t.getLSSyncTz)(e),
+                    i = (0, t.getLSSyncPlayedTime)(e)
+                  let c = {}
+                  return (
+                    window.localStorage.setItem(s, n),
+                    window.localStorage.setItem(o, `${a}`),
+                    r && (window.localStorage.setItem(i, `${r}`), (c[i] = `${r}`)),
+                    Object.assign({ [s]: n, [o]: `${a}` }, c)
+                  )
+                }),
+                (t.isValidUrl = function (e) {
+                  if (!e) return !1
+                  try {
+                    new URL(e)
+                  } catch (e) {
+                    return !1
+                  }
+                  return !0
+                }))
+            },
+            614: (e, t, n) => {
+              "use strict"
+              var a
+              ;(n.r(t),
+                n.d(t, {
+                  NIL: () => O,
+                  parse: () => y,
+                  stringify: () => u,
+                  v1: () => p,
+                  v3: () => A,
+                  v4: () => T,
+                  v5: () => R,
+                  validate: () => i,
+                  version: () => U,
+                }))
+              var r = new Uint8Array(16)
+              function s() {
+                if (
+                  !a &&
+                  !(a =
+                    ("undefined" != typeof crypto &&
+                      crypto.getRandomValues &&
+                      crypto.getRandomValues.bind(crypto)) ||
+                    ("undefined" != typeof msCrypto &&
+                      "function" == typeof msCrypto.getRandomValues &&
+                      msCrypto.getRandomValues.bind(msCrypto)))
+                )
+                  throw new Error(
+                    "crypto.getRandomValues() not supported. See https://github.com/uuidjs/uuid#getrandomvalues-not-supported",
+                  )
+                return a(r)
+              }
+              const o =
+                /^(?:[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}|00000000-0000-0000-0000-000000000000)$/i
+              const i = function (e) {
+                return "string" == typeof e && o.test(e)
+              }
+              for (var c = [], d = 0; d < 256; ++d) c.push((d + 256).toString(16).substr(1))
+              const u = function (e) {
+                var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0,
+                  n = (
+                    c[e[t + 0]] +
+                    c[e[t + 1]] +
+                    c[e[t + 2]] +
+                    c[e[t + 3]] +
+                    "-" +
+                    c[e[t + 4]] +
+                    c[e[t + 5]] +
+                    "-" +
+                    c[e[t + 6]] +
+                    c[e[t + 7]] +
+                    "-" +
+                    c[e[t + 8]] +
+                    c[e[t + 9]] +
+                    "-" +
+                    c[e[t + 10]] +
+                    c[e[t + 11]] +
+                    c[e[t + 12]] +
+                    c[e[t + 13]] +
+                    c[e[t + 14]] +
+                    c[e[t + 15]]
+                  ).toLowerCase()
+                if (!i(n)) throw TypeError("Stringified UUID is invalid")
+                return n
+              }
+              var l,
+                h,
+                g = 0,
+                f = 0
+              const p = function (e, t, n) {
+                var a = (t && n) || 0,
+                  r = t || new Array(16),
+                  o = (e = e || {}).node || l,
+                  i = void 0 !== e.clockseq ? e.clockseq : h
+                if (null == o || null == i) {
+                  var c = e.random || (e.rng || s)()
+                  ;(null == o && (o = l = [1 | c[0], c[1], c[2], c[3], c[4], c[5]]),
+                    null == i && (i = h = 16383 & ((c[6] << 8) | c[7])))
+                }
+                var d = void 0 !== e.msecs ? e.msecs : Date.now(),
+                  p = void 0 !== e.nsecs ? e.nsecs : f + 1,
+                  y = d - g + (p - f) / 1e4
+                if (
+                  (y < 0 && void 0 === e.clockseq && (i = (i + 1) & 16383),
+                  (y < 0 || d > g) && void 0 === e.nsecs && (p = 0),
+                  p >= 1e4)
+                )
+                  throw new Error("uuid.v1(): Can't create more than 10M uuids/sec")
+                ;((g = d), (f = p), (h = i))
+                var S = (1e4 * (268435455 & (d += 122192928e5)) + p) % 4294967296
+                ;((r[a++] = (S >>> 24) & 255),
+                  (r[a++] = (S >>> 16) & 255),
+                  (r[a++] = (S >>> 8) & 255),
+                  (r[a++] = 255 & S))
+                var m = ((d / 4294967296) * 1e4) & 268435455
+                ;((r[a++] = (m >>> 8) & 255),
+                  (r[a++] = 255 & m),
+                  (r[a++] = ((m >>> 24) & 15) | 16),
+                  (r[a++] = (m >>> 16) & 255),
+                  (r[a++] = (i >>> 8) | 128),
+                  (r[a++] = 255 & i))
+                for (var v = 0; v < 6; ++v) r[a + v] = o[v]
+                return t || u(r)
+              }
+              const y = function (e) {
+                if (!i(e)) throw TypeError("Invalid UUID")
+                var t,
+                  n = new Uint8Array(16)
+                return (
+                  (n[0] = (t = parseInt(e.slice(0, 8), 16)) >>> 24),
+                  (n[1] = (t >>> 16) & 255),
+                  (n[2] = (t >>> 8) & 255),
+                  (n[3] = 255 & t),
+                  (n[4] = (t = parseInt(e.slice(9, 13), 16)) >>> 8),
+                  (n[5] = 255 & t),
+                  (n[6] = (t = parseInt(e.slice(14, 18), 16)) >>> 8),
+                  (n[7] = 255 & t),
+                  (n[8] = (t = parseInt(e.slice(19, 23), 16)) >>> 8),
+                  (n[9] = 255 & t),
+                  (n[10] = ((t = parseInt(e.slice(24, 36), 16)) / 1099511627776) & 255),
+                  (n[11] = (t / 4294967296) & 255),
+                  (n[12] = (t >>> 24) & 255),
+                  (n[13] = (t >>> 16) & 255),
+                  (n[14] = (t >>> 8) & 255),
+                  (n[15] = 255 & t),
+                  n
+                )
+              }
+              function S(e, t, n) {
+                function a(e, a, r, s) {
+                  if (
+                    ("string" == typeof e &&
+                      (e = (function (e) {
+                        e = unescape(encodeURIComponent(e))
+                        for (var t = [], n = 0; n < e.length; ++n) t.push(e.charCodeAt(n))
+                        return t
+                      })(e)),
+                    "string" == typeof a && (a = y(a)),
+                    16 !== a.length)
+                  )
+                    throw TypeError(
+                      "Namespace must be array-like (16 iterable integer values, 0-255)",
+                    )
+                  var o = new Uint8Array(16 + e.length)
+                  if (
+                    (o.set(a),
+                    o.set(e, a.length),
+                    ((o = n(o))[6] = (15 & o[6]) | t),
+                    (o[8] = (63 & o[8]) | 128),
+                    r)
+                  ) {
+                    s = s || 0
+                    for (var i = 0; i < 16; ++i) r[s + i] = o[i]
+                    return r
+                  }
+                  return u(o)
+                }
+                try {
+                  a.name = e
+                } catch (e) {}
+                return (
+                  (a.DNS = "6ba7b810-9dad-11d1-80b4-00c04fd430c8"),
+                  (a.URL = "6ba7b811-9dad-11d1-80b4-00c04fd430c8"),
+                  a
+                )
+              }
+              function m(e) {
+                return 14 + (((e + 64) >>> 9) << 4) + 1
+              }
+              function v(e, t) {
+                var n = (65535 & e) + (65535 & t)
+                return (((e >> 16) + (t >> 16) + (n >> 16)) << 16) | (65535 & n)
+              }
+              function w(e, t, n, a, r, s) {
+                return v(((o = v(v(t, e), v(a, s))) << (i = r)) | (o >>> (32 - i)), n)
+                var o, i
+              }
+              function D(e, t, n, a, r, s, o) {
+                return w((t & n) | (~t & a), e, t, r, s, o)
+              }
+              function _(e, t, n, a, r, s, o) {
+                return w((t & a) | (n & ~a), e, t, r, s, o)
+              }
+              function E(e, t, n, a, r, s, o) {
+                return w(t ^ n ^ a, e, t, r, s, o)
+              }
+              function b(e, t, n, a, r, s, o) {
+                return w(n ^ (t | ~a), e, t, r, s, o)
+              }
+              const I = function (e) {
+                if ("string" == typeof e) {
+                  var t = unescape(encodeURIComponent(e))
+                  e = new Uint8Array(t.length)
+                  for (var n = 0; n < t.length; ++n) e[n] = t.charCodeAt(n)
+                }
+                return (function (e) {
+                  for (
+                    var t = [], n = 32 * e.length, a = "0123456789abcdef", r = 0;
+                    r < n;
+                    r += 8
+                  ) {
+                    var s = (e[r >> 5] >>> (r % 32)) & 255,
+                      o = parseInt(a.charAt((s >>> 4) & 15) + a.charAt(15 & s), 16)
+                    t.push(o)
+                  }
+                  return t
+                })(
+                  (function (e, t) {
+                    ;((e[t >> 5] |= 128 << (t % 32)), (e[m(t) - 1] = t))
+                    for (
+                      var n = 1732584193, a = -271733879, r = -1732584194, s = 271733878, o = 0;
+                      o < e.length;
+                      o += 16
+                    ) {
+                      var i = n,
+                        c = a,
+                        d = r,
+                        u = s
+                      ;((n = D(n, a, r, s, e[o], 7, -680876936)),
+                        (s = D(s, n, a, r, e[o + 1], 12, -389564586)),
+                        (r = D(r, s, n, a, e[o + 2], 17, 606105819)),
+                        (a = D(a, r, s, n, e[o + 3], 22, -1044525330)),
+                        (n = D(n, a, r, s, e[o + 4], 7, -176418897)),
+                        (s = D(s, n, a, r, e[o + 5], 12, 1200080426)),
+                        (r = D(r, s, n, a, e[o + 6], 17, -1473231341)),
+                        (a = D(a, r, s, n, e[o + 7], 22, -45705983)),
+                        (n = D(n, a, r, s, e[o + 8], 7, 1770035416)),
+                        (s = D(s, n, a, r, e[o + 9], 12, -1958414417)),
+                        (r = D(r, s, n, a, e[o + 10], 17, -42063)),
+                        (a = D(a, r, s, n, e[o + 11], 22, -1990404162)),
+                        (n = D(n, a, r, s, e[o + 12], 7, 1804603682)),
+                        (s = D(s, n, a, r, e[o + 13], 12, -40341101)),
+                        (r = D(r, s, n, a, e[o + 14], 17, -1502002290)),
+                        (n = _(
+                          n,
+                          (a = D(a, r, s, n, e[o + 15], 22, 1236535329)),
+                          r,
+                          s,
+                          e[o + 1],
+                          5,
+                          -165796510,
+                        )),
+                        (s = _(s, n, a, r, e[o + 6], 9, -1069501632)),
+                        (r = _(r, s, n, a, e[o + 11], 14, 643717713)),
+                        (a = _(a, r, s, n, e[o], 20, -373897302)),
+                        (n = _(n, a, r, s, e[o + 5], 5, -701558691)),
+                        (s = _(s, n, a, r, e[o + 10], 9, 38016083)),
+                        (r = _(r, s, n, a, e[o + 15], 14, -660478335)),
+                        (a = _(a, r, s, n, e[o + 4], 20, -405537848)),
+                        (n = _(n, a, r, s, e[o + 9], 5, 568446438)),
+                        (s = _(s, n, a, r, e[o + 14], 9, -1019803690)),
+                        (r = _(r, s, n, a, e[o + 3], 14, -187363961)),
+                        (a = _(a, r, s, n, e[o + 8], 20, 1163531501)),
+                        (n = _(n, a, r, s, e[o + 13], 5, -1444681467)),
+                        (s = _(s, n, a, r, e[o + 2], 9, -51403784)),
+                        (r = _(r, s, n, a, e[o + 7], 14, 1735328473)),
+                        (n = E(
+                          n,
+                          (a = _(a, r, s, n, e[o + 12], 20, -1926607734)),
+                          r,
+                          s,
+                          e[o + 5],
+                          4,
+                          -378558,
+                        )),
+                        (s = E(s, n, a, r, e[o + 8], 11, -2022574463)),
+                        (r = E(r, s, n, a, e[o + 11], 16, 1839030562)),
+                        (a = E(a, r, s, n, e[o + 14], 23, -35309556)),
+                        (n = E(n, a, r, s, e[o + 1], 4, -1530992060)),
+                        (s = E(s, n, a, r, e[o + 4], 11, 1272893353)),
+                        (r = E(r, s, n, a, e[o + 7], 16, -155497632)),
+                        (a = E(a, r, s, n, e[o + 10], 23, -1094730640)),
+                        (n = E(n, a, r, s, e[o + 13], 4, 681279174)),
+                        (s = E(s, n, a, r, e[o], 11, -358537222)),
+                        (r = E(r, s, n, a, e[o + 3], 16, -722521979)),
+                        (a = E(a, r, s, n, e[o + 6], 23, 76029189)),
+                        (n = E(n, a, r, s, e[o + 9], 4, -640364487)),
+                        (s = E(s, n, a, r, e[o + 12], 11, -421815835)),
+                        (r = E(r, s, n, a, e[o + 15], 16, 530742520)),
+                        (n = b(
+                          n,
+                          (a = E(a, r, s, n, e[o + 2], 23, -995338651)),
+                          r,
+                          s,
+                          e[o],
+                          6,
+                          -198630844,
+                        )),
+                        (s = b(s, n, a, r, e[o + 7], 10, 1126891415)),
+                        (r = b(r, s, n, a, e[o + 14], 15, -1416354905)),
+                        (a = b(a, r, s, n, e[o + 5], 21, -57434055)),
+                        (n = b(n, a, r, s, e[o + 12], 6, 1700485571)),
+                        (s = b(s, n, a, r, e[o + 3], 10, -1894986606)),
+                        (r = b(r, s, n, a, e[o + 10], 15, -1051523)),
+                        (a = b(a, r, s, n, e[o + 1], 21, -2054922799)),
+                        (n = b(n, a, r, s, e[o + 8], 6, 1873313359)),
+                        (s = b(s, n, a, r, e[o + 15], 10, -30611744)),
+                        (r = b(r, s, n, a, e[o + 6], 15, -1560198380)),
+                        (a = b(a, r, s, n, e[o + 13], 21, 1309151649)),
+                        (n = b(n, a, r, s, e[o + 4], 6, -145523070)),
+                        (s = b(s, n, a, r, e[o + 11], 10, -1120210379)),
+                        (r = b(r, s, n, a, e[o + 2], 15, 718787259)),
+                        (a = b(a, r, s, n, e[o + 9], 21, -343485551)),
+                        (n = v(n, i)),
+                        (a = v(a, c)),
+                        (r = v(r, d)),
+                        (s = v(s, u)))
+                    }
+                    return [n, a, r, s]
+                  })(
+                    (function (e) {
+                      if (0 === e.length) return []
+                      for (var t = 8 * e.length, n = new Uint32Array(m(t)), a = 0; a < t; a += 8)
+                        n[a >> 5] |= (255 & e[a / 8]) << (a % 32)
+                      return n
+                    })(e),
+                    8 * e.length,
+                  ),
+                )
+              }
+              const A = S("v3", 48, I)
+              const T = function (e, t, n) {
+                var a = (e = e || {}).random || (e.rng || s)()
+                if (((a[6] = (15 & a[6]) | 64), (a[8] = (63 & a[8]) | 128), t)) {
+                  n = n || 0
+                  for (var r = 0; r < 16; ++r) t[n + r] = a[r]
+                  return t
+                }
+                return u(a)
+              }
+              function M(e, t, n, a) {
+                switch (e) {
+                  case 0:
+                    return (t & n) ^ (~t & a)
+                  case 1:
+                  case 3:
+                    return t ^ n ^ a
+                  case 2:
+                    return (t & n) ^ (t & a) ^ (n & a)
+                }
+              }
+              function L(e, t) {
+                return (e << t) | (e >>> (32 - t))
+              }
+              const P = function (e) {
+                var t = [1518500249, 1859775393, 2400959708, 3395469782],
+                  n = [1732584193, 4023233417, 2562383102, 271733878, 3285377520]
+                if ("string" == typeof e) {
+                  var a = unescape(encodeURIComponent(e))
+                  e = []
+                  for (var r = 0; r < a.length; ++r) e.push(a.charCodeAt(r))
+                } else Array.isArray(e) || (e = Array.prototype.slice.call(e))
+                e.push(128)
+                for (
+                  var s = e.length / 4 + 2, o = Math.ceil(s / 16), i = new Array(o), c = 0;
+                  c < o;
+                  ++c
+                ) {
+                  for (var d = new Uint32Array(16), u = 0; u < 16; ++u)
+                    d[u] =
+                      (e[64 * c + 4 * u] << 24) |
+                      (e[64 * c + 4 * u + 1] << 16) |
+                      (e[64 * c + 4 * u + 2] << 8) |
+                      e[64 * c + 4 * u + 3]
+                  i[c] = d
+                }
+                ;((i[o - 1][14] = (8 * (e.length - 1)) / Math.pow(2, 32)),
+                  (i[o - 1][14] = Math.floor(i[o - 1][14])),
+                  (i[o - 1][15] = (8 * (e.length - 1)) & 4294967295))
+                for (var l = 0; l < o; ++l) {
+                  for (var h = new Uint32Array(80), g = 0; g < 16; ++g) h[g] = i[l][g]
+                  for (var f = 16; f < 80; ++f)
+                    h[f] = L(h[f - 3] ^ h[f - 8] ^ h[f - 14] ^ h[f - 16], 1)
+                  for (var p = n[0], y = n[1], S = n[2], m = n[3], v = n[4], w = 0; w < 80; ++w) {
+                    var D = Math.floor(w / 20),
+                      _ = (L(p, 5) + M(D, y, S, m) + v + t[D] + h[w]) >>> 0
+                    ;((v = m), (m = S), (S = L(y, 30) >>> 0), (y = p), (p = _))
+                  }
+                  ;((n[0] = (n[0] + p) >>> 0),
+                    (n[1] = (n[1] + y) >>> 0),
+                    (n[2] = (n[2] + S) >>> 0),
+                    (n[3] = (n[3] + m) >>> 0),
+                    (n[4] = (n[4] + v) >>> 0))
+                }
+                return [
+                  (n[0] >> 24) & 255,
+                  (n[0] >> 16) & 255,
+                  (n[0] >> 8) & 255,
+                  255 & n[0],
+                  (n[1] >> 24) & 255,
+                  (n[1] >> 16) & 255,
+                  (n[1] >> 8) & 255,
+                  255 & n[1],
+                  (n[2] >> 24) & 255,
+                  (n[2] >> 16) & 255,
+                  (n[2] >> 8) & 255,
+                  255 & n[2],
+                  (n[3] >> 24) & 255,
+                  (n[3] >> 16) & 255,
+                  (n[3] >> 8) & 255,
+                  255 & n[3],
+                  (n[4] >> 24) & 255,
+                  (n[4] >> 16) & 255,
+                  (n[4] >> 8) & 255,
+                  255 & n[4],
+                ]
+              }
+              const R = S("v5", 80, P),
+                O = "00000000-0000-0000-0000-000000000000"
+              const U = function (e) {
+                if (!i(e)) throw TypeError("Invalid UUID")
+                return parseInt(e.substr(14, 1), 16)
+              }
+            },
+            297: (e, t) => {
+              "use strict"
+              ;(Object.defineProperty(t, "__esModule", { value: !0 }), (t.Encoding = void 0))
+              t.Encoding = class {
+                constructor(e, t) {
+                  if (!e || 64 != e.length) throw Error("Charset must contain 64 characters")
+                  ;((this._charset = e),
+                    (this._noPadding = !!t),
+                    (this._valid = new RegExp(
+                      "^[" + this._charset.replace("-", "\\-") + "]+={0,2}$",
+                    )))
+                }
+                Encode(e) {
+                  const t = e.byteLength
+                  if (!t) return ""
+                  const n = new Uint8Array(e)
+                  let a = ""
+                  for (let e = 0; e < t; e += 3)
+                    a +=
+                      this._charset[n[e] >> 2] +
+                      this._charset[((3 & n[e]) << 4) | (n[e + 1] >> 4)] +
+                      this._charset[((15 & n[e + 1]) << 2) | (n[e + 2] >> 6)] +
+                      this._charset[63 & n[e + 2]]
+                  return (
+                    t % 3 == 2
+                      ? ((a = a.substring(0, a.length - 1)), this._noPadding || (a += "="))
+                      : t % 3 == 1 &&
+                        ((a = a.substring(0, a.length - 2)), this._noPadding || (a += "==")),
+                    a
+                  )
+                }
+                Decode(e) {
+                  if (!(e = (e || "").replace(/[\s]/g, ""))) return new ArrayBuffer(0)
+                  if (!this._valid.test(e)) throw Error("Invalid base64 input sequence")
+                  let t = Math.floor(0.75 * e.length)
+                  "=" == e[e.length - 2] ? (t -= 2) : "=" == e[e.length - 1] && t--
+                  const n = new Uint8Array(t)
+                  let a,
+                    r,
+                    s,
+                    o,
+                    i = 0,
+                    c = 0
+                  for (; i < 0.75 * e.length; )
+                    ((a = this._charset.indexOf(e.charAt(c++))),
+                      (r = this._charset.indexOf(e.charAt(c++))),
+                      (s = this._charset.indexOf(e.charAt(c++))),
+                      (o = this._charset.indexOf(e.charAt(c++))),
+                      (n[i++] = (a << 2) | (r >> 4)),
+                      (n[i++] = ((15 & r) << 4) | (s >> 2)),
+                      (n[i++] = ((3 & s) << 6) | o))
+                  return n.buffer
+                }
+              }
+            },
+            870: (e, t, n) => {
+              "use strict"
+              ;(Object.defineProperty(t, "__esModule", { value: !0 }),
+                (t.Decode = t.Encode = t.Url = t.Standard = void 0))
+              const a = n(748)
+              ;(Object.defineProperty(t, "Encode", {
+                enumerable: !0,
+                get: function () {
+                  return a.Encode
+                },
+              }),
+                Object.defineProperty(t, "Decode", {
+                  enumerable: !0,
+                  get: function () {
+                    return a.Decode
+                  },
+                }))
+              const r = n(125)
+              ;((t.Standard = { Encode: a.Encode, Decode: a.Decode }),
+                (t.Url = { Encode: r.Encode, Decode: r.Decode }))
+            },
+            748: (e, t, n) => {
+              "use strict"
+              ;(Object.defineProperty(t, "__esModule", { value: !0 }),
+                (t.Decode = t.Encode = void 0))
+              const a = new (n(297).Encoding)(
+                "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/",
+              )
+              ;((t.Encode = function (e) {
+                return a.Encode(e)
+              }),
+                (t.Decode = function (e) {
+                  return a.Decode(e)
+                }))
+            },
+            125: (e, t, n) => {
+              "use strict"
+              ;(Object.defineProperty(t, "__esModule", { value: !0 }),
+                (t.Decode = t.Encode = void 0))
+              const a = new (n(297).Encoding)(
+                "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_",
+                !0,
+              )
+              ;((t.Encode = function (e) {
+                return a.Encode(e)
+              }),
+                (t.Decode = function (e) {
+                  return a.Decode(e)
+                }))
+            },
+          },
+          t = {}
+        function n(a) {
+          var r = t[a]
+          if (void 0 !== r) return r.exports
+          var s = (t[a] = { exports: {} })
+          return (e[a].call(s.exports, s, s.exports, n), s.exports)
+        }
+        ;((n.d = (e, t) => {
+          for (var a in t)
+            n.o(t, a) && !n.o(e, a) && Object.defineProperty(e, a, { enumerable: !0, get: t[a] })
+        }),
+          (n.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t)),
+          (n.r = (e) => {
+            ;("undefined" != typeof Symbol &&
+              Symbol.toStringTag &&
+              Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }),
+              Object.defineProperty(e, "__esModule", { value: !0 }))
+          }))
+        n(607)
+      })()
+    </script>
+    <style>
+      .css-1h1938b {
+        display: none !important;
+      }
+    </style>
+    <script type="text/javascript">
+      function loadScript(url, callback) {
+        var head = document.head
+        var script = document.createElement("script")
+        script.type = "text/javascript"
+        script.src = url
+        script.async = true
+        script.onreadystatechange = callback
+        script.onload = callback
+        script.fetchPriority = "high"
+        head.appendChild(script)
+      }
+      var options = {
+        loader: "unity2021",
+        loaderOptions: {
+          showProgress: true,
+          unityLoaderUrl: "./loader.js",
+          unityConfigOptions: {
+            codeUrl:
+              "https://rooftop-run.game-files.crazygames.com/rooftop-run/1/RoofTop Web/Build/RoofTop Web.wasm.br",
+            dataUrl:
+              "https://rooftop-run.game-files.crazygames.com/rooftop-run/1/RoofTop Web/Build/RoofTop Web.data.br",
+            frameworkUrl:
+              "https://rooftop-run.game-files.crazygames.com/rooftop-run/1/RoofTop Web/Build/RoofTop Web.framework.js.br",
+            streamingAssetsUrl:
+              "https://rooftop-run.game-files.crazygames.com/rooftop-run/1/RoofTop Web/StreamingAssets",
+          },
+        },
+        thumbnail: "rooftop-run_16x9/20240415041518/rooftop-run_16x9-cover",
+        gameName: "Rooftop Run",
+        gameHttps: true,
+        gameSlug: "rooftop-run",
+        gameId: "22679",
+        buildId: "2684ab52-965a-48bb-bbe0-e3bdd736635e",
+        gameStatus: "published",
+        showAdOnExternal: "ALWAYS",
+        showAdOnInternal: "DEFAULT",
+        disableEmbedding: false,
+        dollarRate: 0.8494040581128282,
+        upvotes: 11976,
+        downvotes: 1319,
+        releaseDate: "2024-04-16",
+        locale: "en_US",
+        controls: {
+          text: "<h2>Controls</h2>\n<p>Hold the left mouse button to control the camera movement.</p>",
+        },
+        video: {
+          original: "https://videos.crazygames.com/rooftop-run/1/rooftop-run.mp4",
+          sizes: [
+            {
+              width: 205,
+              height: 115,
+              location:
+                "https://videos.crazygames.com/rooftop-run/1/rooftop-run-landscape-205x115_30fps.mp4",
+            },
+            {
+              width: 249,
+              height: 140,
+              location:
+                "https://videos.crazygames.com/rooftop-run/1/rooftop-run-landscape-249x140_30fps.mp4",
+            },
+            {
+              width: 364,
+              height: 208,
+              location:
+                "https://videos.crazygames.com/rooftop-run/1/rooftop-run-landscape-364x208_30fps.mp4",
+            },
+            {
+              width: 494,
+              height: 276,
+              location:
+                "https://videos.crazygames.com/rooftop-run/1/rooftop-run-landscape-494x276_30fps.mp4",
+            },
+            {
+              width: 611,
+              height: 343,
+              location:
+                "https://videos.crazygames.com/rooftop-run/1/rooftop-run-landscape-611x343_30fps.mp4",
+            },
+            {
+              width: 1024,
+              height: 576,
+              location:
+                "https://videos.crazygames.com/rooftop-run/1/rooftop-run-landscape-1024x576_30fps.mp4",
+            },
+            {
+              width: 1280,
+              height: 720,
+              location:
+                "https://videos.crazygames.com/rooftop-run/1/rooftop-run-landscape-1280x720_30fps.mp4",
+            },
+            {
+              width: 1920,
+              height: 1080,
+              location:
+                "https://videos.crazygames.com/rooftop-run/1/rooftop-run-landscape-1920x1080_30fps.mp4",
+            },
+          ],
+          portraitOriginal: null,
+          portraitSizes: [],
+          blurredVideo: {
+            width: 922,
+            height: 532,
+            location:
+              "https://videos.crazygames.com/rooftop-run/1/rooftop-run-landscape-922x532_30fps_blurred.mp4",
+          },
+        },
+        sandbox: true,
+        totalSizeBytes: 19629129,
+        minTimeBetweenMidrollAdsInMs: 180000,
+        minTimeBetweenRewardedAdsInMs: 5000,
+        noMidrollAdInFirstMinutes: 3,
+        noRewardedAdInFirstMinutes: 0,
+        categoryEnSlug: "arcade",
+        tagsEnSlugs: [
+          "mobile",
+          "parkour",
+          "avoid",
+          "3d",
+          "running",
+          "mouse",
+          "collect",
+          "adrenaline",
+        ],
+        isKids: false,
+        hasMidroll: true,
+        hasRewarded: true,
+        fullscreen: "SUPPORTED",
+        orientation: "BOTH",
+        multiplayerOptions: null,
+        platformAudioMuteSupported: true,
+        launchFlow: "full",
+        loadFileSize: 19614553,
+        userProgressionSaveMessage: "cloud",
+        apsStorageType: "aps",
+        androidFriendly: true,
+        iosFriendly: true,
+        chromebookFriendly: false,
+        safariFriendly: true,
+        category: "Parkour",
+        categoryLink: "https://www.crazygames.com/t/parkour",
+        gameLink: "https://www.crazygames.com/game/rooftop-run",
+        domainHasNoCMP: false,
+        source: "games",
+      }
+      var SDK_READY = false
+      var GF_READY = false
+      var GF_LOAD_CALLED = false
+
+      // Build GF path
+      var gfBuildPath = "https://builds.crazygames.com/gameframe"
+      var gfDefaultVersion = "1"
+      var useLocalGF = false
+      var customGFHost = ""
+      var params = new URLSearchParams(window.location.search)
+      var version = params.get("v")
+      // Validate version param to prevent XSS
+      if (version) {
+        var versionRegex = /^\d+(\.\d+)?(\.\d+)?$/
+        if (!versionRegex.test(version)) {
+          console.error("Invalid Gameframe version provided, falling back to default version")
+          version = null
+        }
+      }
+      var gameframeJs = gfBuildPath + "/v" + (version || gfDefaultVersion) + "/bundle.js"
+      if (useLocalGF) {
+        gameframeJs = "http://localhost:3002/bundle.js"
+      }
+
+      if (customGFHost) {
+        gameframeJs = customGFHost + "/bundle.js"
+      }
+
+      loadScript(gameframeJs, function () {
+        Crazygames.load(options).then(function () {
+          var loaderWrapper = document.getElementById("ziggyLoader")
+          var loaderStyles = document.getElementById("ziggyLoaderStyles")
+          if (loaderWrapper && loaderStyles) {
+            loaderWrapper.remove()
+            loaderStyles.remove()
+          }
+        })
+      })
+    </script>
+  </body>
+</html>
