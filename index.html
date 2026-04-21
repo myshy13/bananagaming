@@ -455,15 +455,7 @@
 
         gamesChanged = true
         if (gamesChanged) {
-          searchResults.sort((a, b) => a.name.localeCompare(b.name))
-          searchResults = searchResults.concat([
-            {
-              name: "Request a Game",
-              path: "#",
-              logoSrc: "./assets/newgame.png",
-              id: "request-game",
-            },
-          ])
+          searchResults.sort((a, b) => a.name.localeCompare(b.name)
           const gamesDiv = document.getElementById("games")
           gamesDiv.innerHTML = ""
 
@@ -488,38 +480,7 @@
             gameButton.appendChild(gameLogo)
             gameButton.appendChild(gameLabel)
 
-            if (element.id === "request-game") {
-              gameButton.addEventListener("click", function (event) {
-                event.preventDefault()
-                const gameName = prompt("Enter the name of the game you want to request:")
-                if (gameName) {
-                  alert(
-                    `I will add ${gameName} to the list of new games! Thanks for the suggestion :)`,
-                  )
-                }
-                ;(async () => {
-                  const res = await fetch(`${serverurl}/api/v1/requestGame`, {
-                    method: "POST",
-                    body: JSON.stringify({
-                      name: gameName,
-                    }),
-                  })
-                })()
-              })
-            } else {
-              gameButton.addEventListener("click", async (e) => {
-                e.preventDefault()
-                console.log(
-                  await fetch(`${serverurl}/api/v1/click`, {
-                    method: "PUT",
-                    body: JSON.stringify({
-                      id: element.id,
-                    }),
-                  }),
-                  (window.location.href = element.path),
-                )
-              })
-            }
+            
             try {
               if (element.fontsize) {
                 gameButton.style.fontSize = element.fontsize + "em"
