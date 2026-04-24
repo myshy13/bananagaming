@@ -1,0 +1,226 @@
+.background {
+  background: url("./background.png") no-repeat center center fixed;
+  background-size: cover;
+  z-index: -1;
+  position: absolute;
+  top: -2em;
+  left: 0;
+  width: 100%;
+  height: 105%;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  position: relative;
+  min-height: 100vh;
+}
+
+.game {
+  background-color: #00000024;
+  height: 10.5rem;
+  width: 10.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0.26509rem;
+  border-radius: 1.5rem;
+  box-sizing: border-box;
+  text-align: center;
+  backdrop-filter: blur(11px) saturate(180%);
+  -webkit-backdrop-filter: blur(11px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  transition: 0.3s ease;
+  position: relative;
+}
+
+.game h4 {
+  position: absolute;
+  opacity: 0;
+  transition: 0.2s ease;
+  background-color: #222222a5;
+  top: -1.5em;
+  border-radius: 1.5rem;
+  left: 0;
+  width: 100%;
+  height: 102%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.game:hover h4 {
+  opacity: 1;
+}
+
+.badge {
+  position: absolute;
+  left: 0.5em;
+  padding: 0.4em 0.6em;
+  font-size: 0.7rem;
+  border-radius: 0.6em;
+  font-weight: bold;
+  text-transform: uppercase;
+  top: 2em;
+  pointer-events: none;
+}
+
+/* Variants */
+.badge-new {
+  background: #4caf50;
+  color: white;
+  top: 2em;
+  left: 1em;
+}
+
+.badge-og {
+  background: gold;
+  color: black;
+}
+
+.badge-hot {
+  background: #ff3b3b;
+  color: white;
+}
+
+.badge-beta {
+  background: #2196f3;
+  color: white;
+}
+
+.searchIcon {
+  height: 2em;
+}
+
+.search {
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  height: 4em;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 4em;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(201, 212, 231, 0.11);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  transition: 0.3s ease;
+  border-radius: 2rem;
+  padding: 0.8em;
+  box-sizing: border-box;
+}
+
+.search input {
+  opacity: 0;
+  height: 2rem;
+  border: 0;
+  width: 0rem;
+  box-sizing: border-box;
+  transition: 0.3s ease;
+  background-color: #0000;
+  outline: none;
+  color: white;
+  font-size: large;
+  margin-left: 1em;
+  box-sizing: border-box;
+  text-shadow: 1px 1px 5px #0000005e;
+}
+
+.search input::placeholder {
+  opacity: 0.3;
+  color: white;
+  transition: 0.5s ease;
+}
+
+.search input:focus::placeholder {
+  opacity: 0.7;
+}
+
+.search:hover input,
+.search:focus-within input {
+  height: 2rem;
+  width: 17rem;
+  opacity: 1;
+}
+
+.search:focus-within,
+.search:hover {
+  width: 20em;
+}
+
+.game:hover {
+  scale: 1.05;
+  rotate: -5deg;
+}
+
+.game img {
+  height: 9rem;
+  aspect-ratio: 1 / 1;
+}
+
+.x-scrollable {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: #e5c826;
+  padding: 0.5em 0;
+  overflow-y: hidden;
+}
+
+h1 {
+  margin-block: 0.67em !important;
+  font-size: 2em !important;
+}
+
+.scroll-btn {
+  position: fixed;
+}
+
+.right {
+  right: 10px;
+  top: auto;
+}
+
+.left {
+  left: 10px;
+  top: auto;
+}
+
+.games {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1em;
+}
+
+.trending {
+  position: relative;
+}
+
+.trending::before {
+  content: "🔥";
+  display: block;
+  position: absolute;
+  z-index: 2;
+  top: -1.5rem;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.7rem;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+  right: -1.5rem;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 1.5rem;
+  background-color: gold;
+}
