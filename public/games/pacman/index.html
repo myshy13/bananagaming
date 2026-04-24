@@ -1,36 +1,22 @@
 <!doctype html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
+    <!-- base: https://github.com/rycellgames/rycellgames.github.io/blob/master/public/raw/games/pacman/index.html -->
+    <base
+      href="https://cdn.jsdelivr.net/gh/rycellgames/rycellgames.github.io@master/public/raw/games/pacman/" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>pacman | play on MRGOAT</title>
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <title>jsPacman | JavaScript Ms. Pac-Man Remake</title>
+    <link
+      rel="shortcut icon"
+      href="favicon.png" />
   </head>
   <body>
-    <div
-      class="container"
-      id="container"
-      style="height: 100vh; width: 100vw; display: block"
-    ></div>
-    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-    <script>
-      window.RufflePlayer = window.RufflePlayer || {};
-      window.addEventListener("DOMContentLoaded", () => {
-        let ruffle = window.RufflePlayer.newest();
-        let player = ruffle.createPlayer();
-        let container = document.getElementById("container");
-        player.style.width = "100%";
-        player.style.height = "100%";
-        document.body.style.margin = "0";
-        document.body.style.overflow = "hidden";
-        player.style.backgroundColor = "black";
-        container.appendChild(player);
-        player.load("./pacman.swf").then(() => {
-          player.play();
-        });
-      });
-    </script>
+    <div class="js-pacman-playground with-border"></div>
+    <script
+      type="text/javascript"
+      src="bundle.js"></script>
   </body>
 </html>
