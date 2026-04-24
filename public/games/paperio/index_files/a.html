@@ -4,16 +4,13 @@
     type="text/css"
     id="dark-mode"
     rel="stylesheet"
-    href=""
-  /><style
+    href="" /><style
     type="text/css"
-    id="dark-mode-custom-style"
-  ></style
+    id="dark-mode-custom-style"></style
   ><head>
     <meta
       http-equiv="content-type"
-      content="text/html; charset=UTF-8"
-    />
+      content="text/html; charset=UTF-8" />
   </head>
   <body>
     <style>
@@ -40,12 +37,7 @@
         color: white;
       }
     </style>
-    <a
-      class="header_hamacgaming"
-      href="https://hamacgaming.github.io"
-    >
-      back to home </a
-    ><module>
+    <module>
       <moduleprefs title="google.com">
         <content type="html"
           ><!--[CDATA[
@@ -55,61 +47,49 @@
           <meta charset="utf-8" />
           <meta
             name="theme-color"
-            content="#2d3331"
-          />
+            content="#2d3331" />
           <meta
             name="viewport"
-            content="width=device-width, initial-scale=1, user-scalable=no"
-          />
+            content="width=device-width, initial-scale=1, user-scalable=no" />
           <title>Paper.io 2</title>
           <link
             rel="manifest"
-            href="https://cdn.jsdelivr.net/gh/234sd4w5w45wers5tr-645758574456456/435345345346@main/manifest.json"
-          />
+            href="https://cdn.jsdelivr.net/gh/234sd4w5w45wers5tr-645758574456456/435345345346@main/manifest.json" />
           <link
             rel="icon"
             type="image/png"
-            href="https://796670947-atari-embeds.googleusercontent.com/embeds/favicon.png"
-          />
+            href="https://796670947-atari-embeds.googleusercontent.com/embeds/favicon.png" />
           <link
             rel="stylesheet"
-            href="a_data/fonts.css"
-          />
+            href="a_data/fonts.css" />
           <link
             rel="stylesheet"
-            href="a_data/style3.css"
-          />
+            href="a_data/style3.css" />
 
           <script
             id="gamemonetize-sdk"
             type="text/javascript"
             async=""
-            src="a_data/sdk.js"
-          ></script>
+            src="a_data/sdk.js"></script>
           <script
             type="text/javascript"
-            src="a_data/window.js"
-          ></script>
+            src="a_data/window.js"></script>
           <script
             type="text/javascript"
-            src="a_data/loader.js"
-          ></script>
+            src="a_data/loader.js"></script>
           <script
             type="text/javascript"
-            src="a_data/app-new-gm.js"
-          ></script>
+            src="a_data/app-new-gm.js"></script>
           <div id="game">
             <canvas
               class="fadein"
               id="view"
               width="1454"
-              height="878"
-            ></canvas>
+              height="878"></canvas>
             <div id="ui_overlay"></div>
             <div
               id="ui"
-              class=""
-            >
+              class="">
               <div id="left_side"></div>
               <div class="uibox">
                 <div class="logo"><img src="a_data/logo.png" /></div>
@@ -121,12 +101,10 @@
                     name="nick"
                     autocomplete="off"
                     placeholder="Your name"
-                    maxlength="12"
-                  /><button
+                    maxlength="12" /><button
                     id="play"
                     name="play"
-                    class="yellow"
-                  >
+                    class="yellow">
                     PLAY
                   </button>
                 </form>
@@ -168,8 +146,7 @@
               background-color: rgb(0, 0, 0);
               visibility: hidden;
               overflow: hidden;
-            "
-          >
+            ">
             <video id="imaVideo"></video>
           </div>
 
@@ -266,8 +243,7 @@
             aria-hidden="false"
             role="dialog"
             aria-label="Reklam"
-            style="display: block"
-          >
+            style="display: block">
             <iframe
               id="ad-iframe"
               src="a_data/exec.html"
@@ -275,8 +251,7 @@
               height="95"
               scrolling="no"
               frameborder="0"
-              sandbox="allow-scripts allow-popups allow-same-origin"
-            >
+              sandbox="allow-scripts allow-popups allow-same-origin">
             </iframe>
 
             <!-- opsiyonel sağ maske: eğer hala küçük bir scrollbar kenarda gözüküyorsa bu örtü gizler -->
@@ -285,41 +260,41 @@
 
           <script>
             // 2 saniye sonra reklam göster, sonra 5s geri sayımla X etkinleşecek.
-            (function () {
-              const showDelay = 2000; // ms
-              const countdownStart = 5; // saniye
-              const adContainer = document.getElementById("ad-container");
-              const closeBtn = document.getElementById("close-ad");
+            ;(function () {
+              const showDelay = 2000 // ms
+              const countdownStart = 5 // saniye
+              const adContainer = document.getElementById("ad-container")
+              const closeBtn = document.getElementById("close-ad")
 
               setTimeout(() => {
                 // Göster
-                adContainer.style.display = "block";
-                adContainer.setAttribute("aria-hidden", "false");
+                adContainer.style.display = "block"
+                adContainer.setAttribute("aria-hidden", "false")
 
                 // Geri sayım başlat
-                let timeLeft = countdownStart;
-                closeBtn.textContent = `Kapat (${timeLeft})`;
+                let timeLeft = countdownStart
+                closeBtn.textContent = `Kapat (${timeLeft})`
                 const t = setInterval(() => {
-                  timeLeft--;
+                  timeLeft--
                   if (timeLeft > 0) {
-                    closeBtn.textContent = `Kapat (${timeLeft})`;
+                    closeBtn.textContent = `Kapat (${timeLeft})`
                   } else {
-                    clearInterval(t);
-                    closeBtn.disabled = false;
-                    closeBtn.classList.add("enabled");
-                    closeBtn.textContent = "Kapat (X)";
+                    clearInterval(t)
+                    closeBtn.disabled = false
+                    closeBtn.classList.add("enabled")
+                    closeBtn.textContent = "Kapat (X)"
                   }
-                }, 1000);
+                }, 1000)
 
                 // Kapatma
                 closeBtn.addEventListener("click", () => {
-                  if (closeBtn.disabled) return;
-                  adContainer.remove();
-                });
+                  if (closeBtn.disabled) return
+                  adContainer.remove()
+                })
 
                 // Fareyle sürüklenip taşınma vb. istenmiyorsa eklemeyin.
-              }, showDelay);
-            })();
+              }, showDelay)
+            })()
           </script>
 
           ]]&gt;</content

@@ -421,33 +421,8 @@
             var Ja = e.ta + "_inner", Ka = Cq(e.ea); if (document.baseURI) {
                 var td = wn(Ja), xc = '<head><base href="' + wn(document.baseURI) + '"></head><body>
 
-                    < style >
-    .header_hamacgaming {
-                    position: absolute;
-                height: 3em;
-                width: 10em;
-                top: 1em;
-                left: 1em;
-                border - radius: 50em;
-                background - color: #ffffff36;
-                color: black;
-                display: flex;
-                justify - content: center;
-                align - items: center;
-                transition: 0.2s ease;
-                text - align: center;
-                font - family: Arial, Helvetica, sans - serif;
-                z - index: 100000000000;
-            }
-
-    .header_hamacgaming:hover {
-                background - color: #3a3a3a;
-                color: white;
-            }
-</style >
-<a class="header_hamacgaming" href="https://hamacgaming.github.io">
-    back to home
-</a><iframe id="'+td+'" name="'+td+'"></iframe>';vn("Short HTML snippet, input escaped, safe URL, for performance");var Pa=Km(xc)}else{var Pe=wn(Ja);T=' < body >
+                   
+<iframe id="'+td+'" name="'+td+'"></iframe>';vn("Short HTML snippet, input escaped, safe URL, for performance");var Pa=Km(xc)}else{var Pe=wn(Ja);T=' < body >
 
    <iframe id="'+Pe+'" name="'+Pe+'"></iframe>';vn("Short HTML snippet, input escaped, for performance");Pa=Km(T)}Ka.write(Lm(Pa));e.Ra||qr(Ka.getElementById(Ja),"load",e.Sa,!1,e);var Qa=xq("TEXTAREA",F(e.T));Pa=0;for(var Rb=
             Qa.length; Pa < Rb; Pa++) { var Ra = Qa[Pa].value; T = []; Fq(Qa[Pa], T, !1); if (T.join("") != Ra) { var aa = Qa[Pa]; F(aa != null, "goog.dom.setTextContent expects a non-null value for node"); if ("textContent" in aa) aa.textContent = Ra; else if (aa.nodeType == 3) aa.data = String(Ra); else if (aa.firstChild && aa.firstChild.nodeType == 3) { for (; aa.lastChild != aa.firstChild;)aa.removeChild(F(aa.lastChild)); aa.firstChild.data = String(Ra) } else { Bq(aa); var gv = vq(aa); aa.appendChild(gv.createTextNode(String(Ra))) } Qa[Pa].value = Ra } } var wb = Ka.importNode(F(e.T),
